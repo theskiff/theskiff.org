@@ -1,0 +1,107 @@
+
+$font-family-sans-serif: "American Typewriter", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+@import "bootstrap";
+
+.left-half {
+  background-color: $gray-100;
+}
+
+.right-half {
+  background-color: #222222;
+}
+
+
+@media (max-width: 991px) {
+  html, body, section {
+    height: 100%;
+  }
+
+  .content{
+    height: 200%;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+  .content-cards{
+    height: 100%;
+  }
+
+  .wrapper{
+    position: relative;
+    height: 100%;
+  }
+
+  .full-height {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width:100%;
+  }
+
+  .left-half {
+    height: 100%;
+  }
+
+  .right-half {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  .right-half img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+}
+
+
+@media (min-width: 992px) {
+  html, body, section {
+    height: 100%;
+  }
+
+  .content, .content-cards{
+    height: 100%;
+  }
+
+  .wrapper{
+    position: relative;
+    height: 100%;
+  }
+
+  .left-half,.right-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Pattern styles */
+  .full-height {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width:100%;
+  }
+
+  .left-half {
+    flex: 1;
+  }
+
+  .right-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  .right-half img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+}

@@ -4,6 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "The Skiff" %></title>
+    <!-- Search Engine -->
+    <meta name="description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta itemprop="description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta itemprop="image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta name="twitter:description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="twitter:site" content="@theskiff">
+    <meta name="twitter:creator" content="@theskiff">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta name="og:description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="og:image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <meta name="og:url" content="https://theskiff.org">
+    <meta name="og:site_name" content="The Skiff">
+    <meta name="og:locale" content="en_GB">
+    <meta name="fb:admins" content="286300106">
+    <meta name="og:type" content="website">
     <%= stylesheet_link_tag "site" %>
   </head>
   <body>
@@ -17,19 +39,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">People</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/people">People</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Place</a>
+          <a class="nav-link" href="/place">Place</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Purpose</a>
+          <a class="nav-link" href="/purpose">Purpose</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/faq">FAQ</a>
         </li>
         <li class="nav-item">
           <a class="btn btn-outline-success my-2 my-sm-0" href="#">Join</a>
@@ -37,6 +59,54 @@
       </ul>
     </nav>
     <%= yield %>
+  <footer class="py-5">
+    <div class="d-flex flex-column flex-lg-row
+    justify-content-around justify-content-lg-around
+    align-items-stretch align-items-lg-center content-cards">
+      <div class="card col-xs-12 col-lg-5 col-xl-4 bg-transparent text-white">
+        <div class="card-body">
+          <h4 class="card-title">Address</h4>
+          <p class="card-text">
+            <address>
+              The Skiff<br/>
+              30 Cheapside<br/>
+              Brighton<br/>
+              BN1 4GD
+            </address>
+            <a href="https://goo.gl/maps/jGJY1dY21y52">(main entrance on Blackman Street)</a>
+          </p>
+          <h4 class="card-title">Contact</h4>
+          <p class="card-text">
+            <a href="mailto:hello@theskiff.org">hello@theskiff.org</a><br/>
+            @<a href="http://twitter.com/theskiff">TheSkiff</a> on Twitter
+          </p>
+          <h4 class="card-title">Opening times</h4>
+          <p class="card-text">
+            8am to 6pm</br>
+            Monday to Friday
+          </p>
+
+        </div>
+      </div>
+
+      <div class="card col-xs-12 col-lg-5 col-xl-4 bg-transparent text-white">
+        <form action="https://www.getdrip.com/forms/56551550/submissions" method="post" data-drip-embedded-form="56551550">
+            <div class="card-body">
+              <h4 class="card-title" data-drip-attribute="headlinex">Happier Homeworking in Brighton</h4>
+              <p class="card-text" data-drip-attribute="descriptionx">Take our FREE 9 lesson course that has helped over 500 freelancers in Sussex to stay productive and keep cabin fever at bay while working from home.</p>
+              <div class="form-group">
+                  <label class="sr-only" for="drip-email">Email Address</label>
+                  <input type="email" id="drip-email" name="fields[email]" placeholder="Email" class="form-control" />
+              </div>
+              <div class="actions">
+                <input type="submit" name="submit" value="Get the first FREE lesson" data-drip-attribute="sign-up-button" class="btn btn-warning btn-block"/>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

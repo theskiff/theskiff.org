@@ -127,5 +127,8 @@
         s.parentNode.insertBefore(dc, s);
       })();
     </script>
+    <% if content_for?(:javascript) %>
+      <%= yield_content :javascript %>
+    <% end %>
   </body>
 </html>

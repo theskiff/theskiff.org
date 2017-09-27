@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <head>
+        <!--[if gte mso 9]><xml>
+          <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+        </xml><![endif]-->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <style inline="true" type="text/css">
+
+            h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+                color:#454545;
+                display:block;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight:bold;
+                line-height:100%;
+                margin-top:0;
+                margin-right:0;
+                margin-bottom:10px;
+                margin-left:0;
+                text-align:left;
+            }
+            h1, .h1 {
+                font-size:26px;
+            }
+            h2, .h2 {
+                font-size:20px;
+            }
+            h3, .h3 {
+                font-size:15px;
+                margin: 0;
+                padding: 0;
+            }
+            h4, .h4 {
+                font-size:13px;
+            }
+            h5, .h5 {
+                font-size:11px;
+            }
+            h6, .h6 {
+                font-size:10px;
+            }
+            .hs-image-social-sharing-24 {
+                max-width: 24px;
+                max-height: 24px;
+            }
+            /* ==== Standard Resets ==== */
+            .ExternalClass{
+                width:100%;
+            } /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+            } /* Force Hotmail to display normal line spacing */
+            body, table, td, p, a, li, blockquote{
+                -webkit-text-size-adjust:100%;
+                -ms-text-size-adjust:100%;
+            } /* Prevent WebKit and Windows mobile changing default text sizes */
+            table, td {
+                mso-table-lspace:0pt;
+                mso-table-rspace:0pt;
+            } /* Remove spacing between tables in Outlook 2007 and up */
+            img {
+                vertical-align: bottom;
+                display: block;
+                outline: none;
+                text-decoration: none;
+                -ms-interpolation-mode:bicubic;
+            } /* Allow smoother rendering of resized image in Internet Explorer */
+            a img {
+                border: none;
+            }
+            .container {
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+                line-height: 24px !important;
+            }
+            .main {
+                margin: 0 auto;
+                width: 640px !important;
+            }
+            .main-inner {
+                border-radius: 3px;
+                background-color: #ffffff;
+            }
+            .main-inner-inner {
+                margin: 0;
+                width: 100%;
+            }
+            .score-labels {
+                width: 640px !important;
+                min-width: 640px !important;
+            }
+            .score-container {
+                width: 640px !important;
+                min-width: 640px !important;
+                border-spacing: 0 !important;
+            }
+            .logo {
+                height: 40px;
+            }
+            .logo h3 {
+                line-height: 40px;
+                font-size: 32px !important;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: bold;
+            }
+            .message {
+                padding: 9px 0;
+                border-top: 1px solid #cccccc;
+            }
+            .message-inner1 {
+                text-align: left !important;
+            }
+            .message table.message-inner {
+                width: 602px;
+            }
+            .message td {
+                font-size: 14px !important;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                line-height: 18px;
+                color: #454545;
+            }
+            .question {
+                padding: 9px 0;
+            }
+            .question table.question-inner {
+                width: 602px;
+            }
+            .question td {
+                font-size: 18px !important;
+                line-height: 24px;
+                color: #454545;
+            }
+            .box {
+                padding: 10px 0 0 0;
+            }
+            .box .box-inner-inner {
+                width: 5px;
+                height: 44px;
+            }
+            .box .box-inner-inner td {
+                width: 4px;
+                height: 44px;
+                line-height: 0;
+                font-size: 0;
+            }
+            .box .box-inner {
+                width: 49px;
+                height: 49px;
+            }
+            .box .box-inner td {
+                background-color: #ffffff;
+                border: 2px solid #cccccc;
+                width: 47px;
+                height: 45px;
+                border-radius: 5px;
+                display: block;
+            }
+            .score {
+                display: block;
+                line-height: 45px;
+                text-decoration: none;
+                font-size: 16px !important;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: normal;
+            }
+            .scale {
+                padding: 18px 0;
+                width: 100%;
+                border-bottom: 1px solid #cccccc;
+            }
+            .scale table {
+                width: 602px;
+            }
+            .scale td {
+                font-size: 18px !important;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #454545;
+            }
+            .scale .scale-low {
+                font-size: 12px !important;
+                width: 50%;
+                color: #454545;
+            }
+            .scale .scale-high {
+                font-size: 12px !important;
+                width: 50%;
+                color: #454545;
+            }
+            .logo {
+                padding: 19px 0;
+            }
+            .box .box-inner a {
+                color: #8d949c !important;
+            }
+            .message,
+            .question,
+            .top-section,
+            .box,
+            .bottom-section,
+            .scale {
+                background-color: #fafafa;
+                border-left: 1px solid #cccccc;
+                border-right: 1px solid #cccccc;
+            }
+
+        </style>
+        <style type="text/css">
+            @media screen and (max-width: 480px) {
+                *[class=main] {
+                    margin: 0 !important;
+                    width: 100% !important;
+                    padding: 0 5px !important;
+                }
+                *[class=main-inner] {
+                    margin: 0 !important;
+                    width: 100% !important;
+                }
+                *[class=main-inner-inner] {
+                    margin: 0 !important;
+                    width: 100% !important;
+                    min-width: 0 !important;
+                }
+                td[class=message] {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+                table[class=message-inner] {
+                    width: 100% !important;
+                }
+                td[class=question] {
+                    padding-left: 10px !important;
+                    padding-right: 10px !important;
+                }
+                table[class=question-inner] {
+                    width: 100% !important;
+                }
+                td[class=scale] {
+                    display: none !important;
+                }
+                td[class=box] {
+                    padding-left: 10px !important;
+                    padding-bottom: 4px !important;
+                    padding-right: 10px !important;
+                    min-width: 0 !important;
+                }
+                table[class=box-inner] {
+                    height: 35px !important;
+                    width: 100% !important;
+                    padding-bottom: 6px !important;
+                }
+                *[class=box01] {
+                    height: 35px !important;
+                    width: 100% !important;
+                }
+                a[class=score] {
+                    line-height: 35px !important;
+                }
+                *[class=score-container] {
+                    min-width: 0 !important;
+                    width: 100% !important;
+                }
+                *[class=score-labels] {
+                    min-width: 0 !important;
+                    width: 100% !important;
+                }
+                *[class="top-section"] {
+                    overflow: visible !important;
+                    float: none !important;
+                    display: block !important;
+                    line-height:100% !important;
+                    padding-top: 20px;
+                }
+                *[class="bottom-section"] {
+                    overflow: visible !important;
+                    float: none !important;
+                    display: block !important;
+                    line-height:100% !important;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #cccccc;
+                }
+                table[class=box-inner-inner] {
+                    display: none !important;
+                    height: 0 !important;
+                    position: absolute !important;
+                    left: -9999px !important;
+                }
+                .content-spacer {
+                    width: 0 !important;
+                }
+            }
+        </style>
+        <!--[if gte mso 9]>
+        <style type='text/css'>
+        table, tbody, tr, td {
+          border-collapse: collapse !important;
+          mso-table-lspace: 0 !important;
+          mso-table-rspace: 0 !important;
+        }
+
+        .box-inner-inner {
+          width: 3px !important;
+        }
+
+        .box-inner {
+          width: 48px !important;
+        }
+        .box01 {
+          width: 48px !important;
+        }
+
+        .box .box-inner a {
+          color: #8d949c !important;
+        }
+        .message {
+          padding: 20px 0 !important;
+        }
+        </style>
+        <![endif]-->
+        <!--[if IE 9]>
+        <style>
+          table.question-inner, table.message-inner {
+            padding: 18px 0;
+          }
+        </style>
+        <![endif]-->
+    </head>
+    <body style="-ms-text-size-adjust:none; -webkit-text-size-adjust:none; margin:0; padding:0; width:100%" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0" class="container" style="line-height:24px; margin:0; padding:0; width:100%" width="100%">
+    <tr>
+        <td align="center" class="l2">
+            <table border="0" cellpadding="0" cellspacing="0" class="main" style="margin:0 auto; width:640px" width="640">
+                <tr>
+                    <td align="center" class="main-inner" style="background-color:#fff; border-radius:3px" bgcolor="#ffffff">
+                        <table border="0" cellpadding="0" cellspacing="0" class="main-inner-inner" style="margin:0; min-width:640px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:100%" width="100%">
+                            <tr>
+                                <td align="center" class="logo" valign="middle" style="height:40px; padding:19px 0" height="40">
+                                    <!-- CHANGE ME -->
+                                    <img src="https://theskiff.netlify.com/images/theskiff.svg">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="message" style="background-color:#fafafa; border-left:1px solid #ccc; border-right:1px solid #ccc; border-top:1px solid #ccc; padding:9px 0" bgcolor="#fafafa">
+
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="message-inner" style="mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:602px" width="602">
+                                        <tr>
+                                            <td align="left" class="message-inner1" style='color:#454545; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:14px; font-weight:normal; line-height:18px; text-align:left'>
+                                                <!-- Your feedback means the world to us. If you don't mind, please take one minute to candidly tell us how we're doing. Don't hold back, we want to know what you really think. Thank you! -->
+                                                {{ email.html }}
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="question" style="background-color:#fafafa; border-left:1px solid #ccc; border-right:1px solid #ccc; padding:9px 0" bgcolor="#fafafa">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="question-inner" style="mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:602px" width="602">
+                                        <tr>
+                                            <td align="center" class="question-inner-inner" style="color:#454545; font-family:Helvetica, Arial, sans-serif; font-size:18px; font-weight:bold; line-height:24px">
+
+                                                How likely are you to recommend <br>the Brand, Product, or Service to a friend or colleague?
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="top-section" style="background-color:#fafafa; border-left:1px solid #ccc; border-right:1px solid #ccc; display:none; float:left; line-height:0; overflow:hidden; font-family:Helvetica, Arial, sans-serif;" bgcolor="#fafafa">0: Not at all likely</td>
+                            </tr>
+                            <tr>
+                                <td class="box" style="background-color:#fafafa; border-left:1px solid #ccc; border-right:1px solid #ccc; min-width:640px; padding:10px 0 0 0" bgcolor="#fafafa">
+                                <table align="center" class="score-container" style="border-spacing:0; min-width:640px; width:640px" width="640">
+                                    <tr>
+                                        <td class="content-spacer" style="width:19px;"></td>
+                                        <td>
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=0&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">0</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=0&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>0</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=1&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">1</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=1&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>1</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=2&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">2</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=2&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>2</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=3&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">3</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=3&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>3</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=4&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">4</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=4&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>4</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=5&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">5</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=5&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>5</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=6&dst=Detractor" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">6</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=6&dst=Detractor" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>6</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=7&dst=Neutral" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">7</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=7&dst=Neutral" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>7</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=8&dst=Neutral" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">8</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=8&dst=Neutral" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>8</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=9&dst=Promoter" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">9</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=9&dst=Promoter" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>9</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner-inner" style="height:44px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:5px" height="44" width="5">
+                                                        <tr>
+                                                            <td style="font-size:0; height:44px; line-height:0; width:4px" height="44" width="4">Â </td>
+                                                        </tr>
+                                                    </table>
+
+
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="box-inner" style="height:49px; mso-cellspacing:0; mso-padding-alt:0 0 0 0; width:49px" height="49" width="49">
+                                                    <tr>
+                                                        <td align="center" class="box01" valign="center" width="47" style="background-color:#fff; border:1px solid #ccc; border-bottom:2px solid #ccc; border-radius:5px; display:block; height:45px; width:47px" bgcolor="#ffffff" height="45">
+                                                            <!--[if mso]>
+                                                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=10&dst=Promoter" style="height:38px;v-text-anchor:middle;width:38px;" arcsize="0%" strokecolor="#ffffff" fillcolor="#ffffff">
+                                                                <w:anchorlock/>
+                                                                <center style="color:#8d949c;font-family:Helvetica, Arial,sans-serif;font-size:16px;font-weight:bold;">10</center>
+                                                              </v:roundrect>
+                                                            <![endif]-->
+                                                            <!--[if !mso]><!-- -->
+                                                            <a href="https://theskiff.netlify.com/nps?drip_email={{subscriber.email}}&score=10&dst=Promoter" class="score" style='color:#8d949c; display:block; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:16px; font-weight:normal; line-height:45px; text-decoration:none'>10</a>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+
+                                        </td>
+                                        <td class="content-spacer" style="width:19px;"></td>
+                                    </tr>
+                                </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" class="bottom-section" style="background-color:#fafafa; border-left:1px solid #ccc; border-right:1px solid #ccc; display:none; float:left; line-height:0; overflow:hidden; font-family:Helvetica, Arial, sans-serif;" bgcolor="#fafafa">10: Extremely likely</td>
+                            </tr>
+                            <tr>
+                                <td class="scale" style="background-color:#fafafa; border-bottom:1px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; padding:18px 0; width:100%" bgcolor="#fafafa" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="score-labels" style="min-width:640px; width:640px" width="640">
+                                        <tr>
+                                            <td class="content-spacer" style='color:#8d949c; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:18px; min-width:19px'></td>
+                                            <td align="left" class="scale-low" style='color:#454545; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; width:50%' width="50%">0: Not at all likely</td>
+                                            <td align="right" class="scale-high" style='color:#454545; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:12px; width:50%' width="50%">10: Extremely likely</td>
+                                            <td class="content-spacer" style='color:#8d949c; font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:18px; min-width:19px'></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center" valign="top" class="bodyContent" width="100%" colspan="12">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="templateColumnWrapper">
+                                        <tr>
+                                            <td valign="top" colspan=12 width="100.0%" class=" column" style="width:100.0%; text-align: left; padding: 20px 0; font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:12px; line-height: 1.5em; color: #333333; ">
+                                                {% unless footer.html == blank %}
+                                                  <div id="footer">
+                                                    {{ footer.html }}
+                                                  </div>
+                                                {% endunless %}
+                                            </td>
+                                        </tr>
+                                    </table>
+                               </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

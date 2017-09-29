@@ -7,7 +7,7 @@ title: The Skiff
     <div class="d-flex flex-column flex-lg-row
     justify-content-around justify-content-lg-around
     align-items-stretch align-items-lg-center content-cards">
-      <div class="card col-xs-12 col-lg-5 col-xl-4">
+      <div class="card col-xs-12 col-lg-5 col-xl-4 bg-light">
         <div class="card-body">
           <h2 class="card-title">It's time you had a good reason to get out of your house every week.</h2>
           <p class="card-text"><strong>Join a community of over 200 people who have the freedom to choose where they work.</strong> Spend all or part of your week Coworking with them. Their shared work and social space in North Laine could become home for your work.</p>
@@ -25,7 +25,7 @@ title: The Skiff
                   <input type="email" id="drip-email" name="fields[email]" placeholder="Email" class="form-control" autofocus/>
               </div>
               <div class="actions">
-                <input type="submit" name="submit" value="Get the first FREE lesson" data-drip-attribute="sign-up-button" class="btn btn-warning btn-block"/>
+                <input type="submit" name="submit" value="Get the first FREE lesson" data-drip-attribute="sign-up-button" class="btn btn-secondary btn-block"/>
               </div>
             </div>
         </form>
@@ -35,9 +35,20 @@ title: The Skiff
   <section class="full-height">
     <div class="left-half">
       <!-- <img src="/assets/images/brighton.jpg"> -->
+      <img src="/images/skiff-mates.jpg">
     </div>
     <div class="right-half">
-      <img src="/images/skiff-mates.jpg">
+
+      <div id='map' style='width: 100%; height: 100%;'></div>
+      <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoidGhlc2tpZmYiLCJhIjoiY2o4NmZ5aGk4MG9zdzM1dWdodjg3bGVudyJ9.DMQpqYWF8CePJTXo__1XOQ';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [-0.1373446,50.8292567], // starting position
+      zoom: 14 // starting zoom
+      });
+      </script>
     </div>
   </section>
 </div>
@@ -48,7 +59,7 @@ title: The Skiff
     <h1>Make working independently in Brighton better than employment anywhere</h1>
     <p class="lead">
       The Skiff is a Coworking community established by ten Skiff Mates in 2008. They have grown slowly to become a collective of over 200 individuals. They're people who value being able to regularly escape the isolation of working alone from home. With the support of Wired Sussex they operate and maintain a 5,000 sq ft shared work and social space. It's less than 5 minutes walk down the hill from Brighton station.
-      <a href="#learn" class="btn btn-success btn-block">Book a tour</a>
+      <a href="#learn" class="btn btn-success btn-block text-white">Book a tour</a>
     </p>
   </div>
 </div>
@@ -57,26 +68,25 @@ title: The Skiff
   After joining The Skiff members report that they feel:
 </p>
 <div class="card-deck">
-  <div class="card text-center text-white bg-success my-2">
+  <div class="card text-center text-white bg-primary my-2">
     <div class="card-body">
       <h4 class="card-title display-2">34.5%</h4>
       <p class="card-text">more productive</p>
     </div>
   </div>
-  <div class="card text-center text-white bg-warning my-2">
+  <div class="card text-center text-white bg-secondary my-2">
     <div class="card-body">
       <h4 class="card-title display-2">40.5%</h4>
       <p class="card-text">fewer distractions</p>
     </div>
   </div>
-  <div class="card text-center text-white bg-info my-2">
+  <div class="card text-center text-white bg-success my-2">
     <div class="card-body">
       <h4 class="card-title display-2">63.6%</h4>
       <p class="card-text">less isolated</p>
     </div>
   </div>
 </div>
-
 
 <p class="lead">
   But it doesn't stop there.

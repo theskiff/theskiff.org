@@ -1,7 +1,32 @@
 
 $font-family-sans-serif: "American Typewriter", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
+$gray-100: rgba(255,255,255,0.6) !default;
+$gray-600: #868e96 !default;
 $gray-800: rgba(0,0,0,0.5) !default;
+
+$blue:    #6699bb !default; //#007bff !default;
+$indigo:  #bb78ff !default; //#6610f2 !default;
+$purple:  #9945de !default; //#6f42c1 !default;
+$pink:    #dd3377 !default; //#e83e8c !default;
+$red:     #aa0055 !default; //#dc3545 !default;
+$orange:  #de9945 !default; //#fd7e14 !default;
+$yellow:  #ffbb78 !default; //#ffc107 !default;
+$green:   #55ccaa !default; //#28a745 !default;
+$teal:    #45de99 !default; //20c997 !default;
+$cyan:    #78bbff !default; //#17a2b8 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  primary: $blue,
+  secondary: $pink,
+  success: $green,
+  info: $purple,
+  warning: $orange,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+), $theme-colors);
 
 @import "bootstrap";
 
@@ -47,8 +72,16 @@ footer {
 
   .left-half {
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
   }
-
+  .left-half img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
   .right-half {
     height: 50%;
     display: flex;
@@ -96,6 +129,15 @@ footer {
 
   .left-half {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+  }
+  .left-half img{
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
   }
 
   .right-half {

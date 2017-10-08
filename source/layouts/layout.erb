@@ -26,6 +26,9 @@
     <meta name="og:locale" content="en_GB">
     <meta name="fb:admins" content="286300106">
     <meta name="og:type" content="website">
+    <% if current_page.data.sitemap_noindex == true %>
+      <meta name="robots" content="noindex">
+    <% end %>
     <%= stylesheet_link_tag "site" %>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />

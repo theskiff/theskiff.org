@@ -4,6 +4,7 @@ sitemap_priority: 0.9
 
 ---
 
+
 <div class="wrapper">
   <div class="content">
 
@@ -13,13 +14,13 @@ sitemap_priority: 0.9
     <div class="card bg-light col-xs-12 col-lg-5 col-xl-4">
         <div class="card-body">
           <h2 class="card-title">Time to try working somewhere different?</h2>
-          <p class="card-text"><strong>We're a community of over 200 people who have the freedom to choose where we work.</strong> We choose to spend part of our week at our shared work and social space in North Laine. <strong>You are very welcome to join us.</strong></p>
+          <p class="card-text"><strong>We're a community of over 200 people who have the freedom to choose where we work.</strong><br />We choose to spend part of our week at our shared work and social space in North Laine.<strong><br />You are very welcome to join us.</strong></p>
           <a href="#learn" class="btn btn-primary btn-block">Learn more about The Skiff</a>
       </div>
       </div>
 
-      <div class="card bg-dark text-white col-xs-12 col-lg-5 col-xl-4">
-          <form action="https://www.getdrip.com/forms/56551550/submissions" method="post" data-drip-embedded-form="56551550">
+      <div class="col-xs-12 col-lg-5 col-xl-4">
+<!--           <form action="https://www.getdrip.com/forms/56551550/submissions" method="post" data-drip-embedded-form="56551550">
               <div class="card-body">
                 <h4 class="card-title" data-drip-attribute="headlinex">Happier Homeworking in Brighton</h4>
                 <p class="card-text" data-drip-attribute="descriptionx">Take our FREE 9 lesson course that has helped over 500 freelancers in Sussex to stay productive and keep cabin fever at bay while working from home.</p>
@@ -31,26 +32,17 @@ sitemap_priority: 0.9
                   <input type="submit" name="submit" value="Get the first FREE lesson" data-drip-attribute="sign-up-button" class="btn btn-secondary btn-block"/>
                 </div>
               </div>
-          </form>
+          </form> -->
       </div>
     </div>
   </div>
+
   <section class="full-height">
     <div class="left-half">
-      <!-- <img src="/assets/images/brighton.jpg"> -->
-      <img src="/images/skiff-mates.jpg">
+      <div id='map'></div>
     </div>
     <div class="right-half">
-      <div id='map' style='width: 100%; height: 100%;'></div>
-      <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoidGhlc2tpZmYiLCJhIjoiY2o4NmZ5aGk4MG9zdzM1dWdodjg3bGVudyJ9.DMQpqYWF8CePJTXo__1XOQ';
-      var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/theskiff/cj8f2aui1aly82sucgalejs5h',
-      center: [-0.1373446,50.8292567], // starting position
-      zoom: 14 // starting zoom
-      });
-      </script>
+      <img src="/images/skiff-mates.jpg">
     </div>
   </section>
 </div>
@@ -395,3 +387,38 @@ sitemap_priority: 0.9
   </div>
 </div>
 </div>
+
+<% content_for :javascript do %>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoidGhlc2tpZmYiLCJhIjoiY2o4NmZ5aGk4MG9zdzM1dWdodjg3bGVudyJ9.DMQpqYWF8CePJTXo__1XOQ';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/theskiff/cj8f2aui1aly82sucgalejs5h',
+center: [-0.138447,50.829323], // starting position
+zoom: 2, // starting zoom
+interactive: false
+});
+
+   map.flyTo({
+  // These options control the ending camera position: centered at
+  // the target, at zoom level 9, and north up.
+  center: [-0.138447,50.829323],
+  zoom: 19,
+  bearing: 0,
+
+  // These options control the flight curve, making it move
+  // slowly and zoom out almost completely before starting
+  // to pan.
+  speed: 0.4, // make the flying slow
+  curve: 1, // change the speed at which it zooms out
+
+  // This can be any easing function: it takes a number between
+  // 0 and 1 and returns another number between 0 and 1.
+  easing: function (t) {
+      return t;
+  }
+});
+           map.resize();
+
+</script>
+<% end %>

@@ -3,8 +3,9 @@ html {
   font-size: 18px;
 }
 
-
 $font-family-sans-serif: "American Typewriter", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$lead-font-weight: 400 !default;
 
 $gray-100: rgba(255,255,255,0.6) !default;
 $gray-600: #868e96 !default;

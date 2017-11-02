@@ -12,8 +12,7 @@
 /new-member-form              /join               301
 /offers                       /join               301
 /community                    /people             301
-/members                      /people             301
-/mates                        /people             301
+/mates                        /members            301
 /key-fob-activation           /fob                301
 /welcome-aboard               /guide              301
 /how-the-skiff-works          /guide              301

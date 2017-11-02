@@ -6,7 +6,7 @@ directory_index: false
 <% pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) && !p.data.sitemap_noindex == true } %>
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<% pages.each do |p| %>
+<% pages.sort_by { |page| page.data.sitemap_priority || 0.5 }.reverse.each do |p| %>
   <url>
     <loc>https://theskiff.org<%=p.url.gsub('/index.html','')%></loc>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,94 @@
+---
+title: What's on at The Skiff
+sitemap_noindex: true
+sitemap_priority: 0.8
+
+captain:
+  first_name: Dan
+  last_name: Young
+  they: he
+  them: him
+  their: his
+  image: /images/danyoung.jpg
+
+week:
+  date: "30-10-2017"
+  days:
+    -
+      name: Monday
+      events:
+        - show_and_tell
+    -
+      name: Tuesday
+      events:
+        - codebar
+    -
+      name: Wednesday
+      events:
+        - welcome_lunch
+        - the_farm
+    -
+      name: Thursday
+      events:
+        - pastries
+        - brighton_lean_agile
+    -
+      name: Friday
+      events: []
+    -
+      name: Saturday
+      events: []
+
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 my-5 mx-auto">
+
+      <h1>What's On at The Skiff This Week</h1>
+
+      <%= partial "this-week" %>
+
+      <%= partial "captain", :locals => current_page.data.captain %>
+
+      <h2>The Week <%= Date.parse(current_page.data.week.date).strftime("%e %B %Y") %> at The Skiff</h2>
+
+      <ul>
+        <% @i = 1 %>
+        <% current_page.data.week.days.each do |day| %>
+          <% unless day.events.empty? %>
+            <li><%= day.name %>
+              <ul>
+                <% day.events.each do |event| %>
+                <li>#<%= @i %> <%= data.events[event].name %> <%= data.events[event].time %> <%= data.events[event].location %></li>
+                <% @i += 1 %>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+
+      <h2>The Details</h2>
+
+      <% @i = 1 %>
+      <% current_page.data.week.days.each do |day| %>
+        <% day.events.each do |event| %>
+          <% unless event.blank? %>
+            <%= partial "event", :locals => {:event=>data.events[event], :week=>current_page.data.week.date, :day=>day.name, :index=>@i, } %>
+          <% @i += 1 %>
+          <% end %>
+        <% end %>
+      <% end %>
+
+      <h1>Something missing?</h1>
+      Have we missed your event or gathering? Let everyone know now via <a href="http://theskiff.groupbuzz.io">Groupbuzz</a>. Make sure you tell us at least a week before the next time it comes up via hello@theskiff.org. We'll be sending these round ups every Monday (usually first thing in the morning).<br />
+      <br />
+      Have a great week!<br />
+      <br />
+      Jon, Anna &amp; James<br />
+      <br />
+      PS If you'd like to volunteer to be Captain let me know and I'll share more with you about what's involved. We need someone for the weeks commencing 27th November and 4th December.
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+---
+title: Management of The Skiff
+sitemap_noindex: true
+sitemap_priority: 0.8
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mx-auto my-5">
+      <h1 class="text-center">"The Skiff doesn't have any full-time staff so there's never a sense of Us and Them. We're all Skiff Mates."</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link active" href="/stewardship">Stewardship</a>
+      </nav>
+      <h2 class="my-3">The people who are responsible for The Skiff</h2>
+      <p class="lead">
+        While The Skiff doesn't have any full-time staff it does have a handful of people who are ultimately responsible for it. The help keep The Skiff on the right course. From making sure emails get answered to keeping an eye on cashflow.
+      </p>
+      <p class="lead">
+        The Skiff is currently owned 50% by Inuda Innovations Ltd which is owned by The Skiff's cofounders Jonathan and Ann Markwell. And 50% by Wired Sussex Ltd which is a not-profit organisation setup by the local digital community. They are responsible for selecting the people who provide The Skiff with the stewardship it needs.
+      </p>
+      <p class="lead">
+        The following people form The Skiff's management team:
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <% data.stewardship.each do |steward, profile| %>
+      <div class="col-lg-4">
+        <div class="card mb-3">
+          <img class="card-img-top" src="/images/<%= steward %>.jpg" alt="<%= profile.first_name %> <%= profile.last_name %>">
+          <div class="card-body">
+            <h4 class="card-title"><%= profile.first_name %> <%= profile.last_name %></h4>
+            <p class="card-text"><%= profile.role %></p>
+            <% if profile.profile == true %>
+              <a href="/members/<%= steward %>" class="btn btn-primary btn-block">Learn more about <%= profile.first_name %></a>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto my-5">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link active" href="/stewardship">Stewardship</a>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+alice-clarke:
+  first_name: Alice
+  last_name: Clarke
+  profile: false
+  captaincies:
+    - 2017-09-11
+ben-edwards:
+  first_name: Ben
+  last_name: Edwards
+  profile: false
+  captaincies:
+    - 2017-09-18
+richard-dallaway:
+  first_name: Richard
+  last_name: Dallaway
+  profile: false
+  captaincies:
+    - 2017-09-25
+dave-gurnell:
+  first_name: Dave
+  last_name: Gurnell
+  profile: false
+  captaincies:
+    - 2017-10-02
+hazlitt-eastman:
+  first_name: Hazlitt
+  last_name: Eastman
+  profile: false
+  captaincies:
+    - 2017-10-09
+tom-parslow:
+  first_name: Tom
+  last_name: Parslow
+  profile: false
+  captaincies:
+    - 2017-10-16
+margaret-ousby:
+  first_name: Margaret
+  last_name: Ousby
+  profile: false
+  captaincies:
+    - 2017-10-23
+dan-young:
+  first_name: Dan
+  last_name: Young
+  profile: true
+  captaincies:
+    - 2017-10-30
+declan-coleman:
+  first_name: Declan
+  last_name: Coleman
+  profile: false
+  captaincies:
+    - 2017-11-06
+caroline-beavon:
+  first_name: Caroline
+  last_name: Beavon
+  profile: true
+  captaincies:
+    - 2017-11-13 
+stuart-wallace:
+  first_name: Stuart
+  last_name: Wallace
+  profile: false
+  captaincies:
+    - 2017-11-20
+you:
+  first_name: You
+  profile: false
+  captaincies:
+    - 2017-11-27

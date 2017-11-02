@@ -1,0 +1,22 @@
+<div class="jumbotron bg-white mb-3 rounded-0">
+  <h1 class="text-center"><%= current_page.data.member.title%></h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto">
+      <h2><%= current_page.data.member.first_name %> <%= current_page.data.member.last_name %></h2>
+      <p class="lead"><%= current_page.data.member.subtitle%></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto mb-5">
+      <img class="float-left mr-3 mb-2 img-fluid w-100 d-block d-xs-none d-sm-none" src="<%= current_page.data.member.image %>" alt="<%= current_page.data.member.first_name %> <%= current_page.data.member.last_name %>">
+      <img class="float-left mr-3 img-fluid w-50 d-none d-xs-block d-sm-block" src="<%= current_page.data.member.image %>" alt="<%= current_page.data.member.first_name %> <%= current_page.data.member.last_name %>">
+      <%= yield_content :q_and_a %>
+      <a href="<%= current_page.data.member.website %>" class="btn btn-primary btn-block">Visit <%= current_page.data.member.first_name %>'s website</a>
+      <a href="https://twitter.com/<%= current_page.data.member.twitter %>" class="btn btn-primary btn-block">Follow @<%= current_page.data.member.twitter %> on Twitter</a>
+      <a href="/join" class="btn btn-success btn-block text-white">Cowork with <%= current_page.data.member.first_name %> at The Skiff</a>
+    </div>
+  </div>
+</div>

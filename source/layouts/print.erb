@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= current_page.data.title || "The Skiff" %></title>
+    <!-- Search Engine -->
+    <meta name="description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta itemprop="description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta itemprop="image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta name="twitter:description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="twitter:site" content="@theskiff">
+    <meta name="twitter:creator" content="@theskiff">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="<%= current_page.data.title || "The Skiff" %>">
+    <meta name="og:description" content="<%= current_page.data.title || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="og:image" content="https://theskiff.org/images/skiff-mates.jpg">
+    <meta name="og:url" content="https://theskiff.org">
+    <meta name="og:site_name" content="The Skiff">
+    <meta name="og:locale" content="en_GB">
+    <meta name="fb:admins" content="286300106">
+    <meta name="og:type" content="website">
+    <meta name="robots" content="noindex">
+    <%= stylesheet_link_tag "site" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+   <style type="text/css" media="print">
+      div.page
+      {
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+    </style>
+  </head>
+  <body>
+
+    <%= yield %>
+
+  </body>
+</html>

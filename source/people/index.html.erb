@@ -3,139 +3,93 @@ title: People at The Skiff
 sitemap_noindex: true
 sitemap_priority: 0.8
 ---
+
+<div class="jumbotron bg-white mb-3 rounded-0">
+  <h1 class="text-center">"The Skiff isn't just a workplace for me, it's also a community and a second home"</h1>
+</div>
+
 <div class="container">
-<div class="row">
-  <div class="col-xs-12 col-md-8 my-5 mx-auto">
-    <h1>People at The Skiff</h1>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link active" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link" href="/stewardship">Stewardship</a>
+      </nav>
+      <h2 class="my-3">Surround yourself with better coworkers</h2>
+      <p class="lead">
+        The Skiff is a community first and a workspace second. When you join you're not a customer, client, tennant or guest. You'll become a member. And members of The Skiff are known as Skiff Mates.
+      </p>
+      <p class="lead">
+        Skiff Mates have personally choosen to be members of The Skiff. We're not here because our employers want us to be here. We've all experienced the challenges of working from home. Some of us choose to work here all the time. But most of us find 1 to 3 days a week in the company of others makes a huge difference to our productivity and wellbeing.
+      </p>
 
- We individually choose to work from here. We're not here because our employers want us to be here. Skiff Mates include freelancers, consultants, micro-business owners, remote workers, accountants, artists, designers, developers, engineers, illustrators, journalists, marketers, masseuses, photographers, musicians, scientists, writers, videographers and more. You'll fit right in.
+    </div>
+  </div>
+</div>
 
- Some members have got more work as a result of the relationships they've built here. Others have become recognised local authorities on topics by running events here. Many have made lasting friendships here. The more you participate the more you get.
+<div class="text-center my-5">
+<% data.members.each do |member,profile| %>
+<a href="http://twitter.com/<%= member %>">
+  <img class="panel-profile-img" height="100" gravity="north" crop="fill" style="height: 100px; background-color: #fff;  margin-top: 0px;" onerror="this.style.display=&#39;none&#39;;" src="https://twitter.com/<%= member %>/profile_image?size=original" alt="<%= member %>" /></a>
+<% end %>
+</div>
 
- We've all experienced the challenges of working from home. Some members choose to work here all the time. But most people find 1 to 3 days a week here makes a huge difference to their productivity and wellbeing.
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto">
+    <h2>We...</h2>
+    <ul>
+      <li>
+        <strong>Design things...</strong> Animators, Aritists, Fabricators, Graphic Designers, Ilustrators, Industrial Designers, User Experience Spacialists
+      </li>
+      <li>
+        <strong>Develop technology...</strong> App Developers, Architects, Data Scientists, DevOps, Engineers, Programmers, Testers, Web Developers
+      </li>
+      <li>
+        <strong>Write words...</strong> Bid Writers, Bloggers, Content Strategists, Copywriters, Editors, Information Architects, Interpreters, Journalists, Novelists, Poets, Proofreaders, Screenwriters, Speechwriters, Translators, Writers
+      </li>
+       <li>
+        <strong>Produce media...</strong> Actors, Directors, Film Makers, Music Producers, Musicians, Photographers, Sound and Lighting Specialists, TV Producers, Podcasters, Projection Designers, Video Editors
+      </li>
+      <li>
+        <strong>Apply specialist knowledge...</strong> Acedemic Researchers, Data Analysts, Market Researchers, Accountants, Analysts, Tax Advisors, Investors, Mathematicians, Surveyors, Lawyers, Solicitors,
+      </li>
+      <li>
+        <strong>Promote products and services...</strong> Book Publicists, Brand Placement Specialists, Communications Strategists, Community Managers, CRO Consultants, Digital Marketing Consultants, Marketing Automation Specialists, PR Consultants, SEO Specialists, Social Media Consultants, 
+      </li>
+      <li>
+        <strong>Teach and support people...</strong> Course Curators, Conference Organisers, Coaches, Counsellors, HR Specialists, Human Rights Specialists, Learning Consultants, Lecturers, Leadership Trainers, Mentors, Policy Advocates, Public Health Consultants, Tutors, Speakers, Workshop Facilitators
+      </li>
+      <li>
+        <strong>Manage projects and processes...</strong> Account Managers, Application Managers, Logistics Managers, Management Consultants, Project Managers, Production Managers, Policy Officers, Solutions Consultants, Support Specialists, Travel Agents, Virtual Assistants
+      </li>
+      <li>
+        <strong>Start and lead businesses and organisations...</strong> Agency Owners, Company Directors, Entrepreneurs, Founders, CTOs, COOs, CEOs, MDs, Regional Managers, Shopkeepers
+      </li>
+    </ul>
+
+    <h2 class="mt-5">What you'll get from the community</h2>
 
     <p class="lead">
-      The Skiff is a community first and a workspace second. When you join you're not a customer, client, tennant or guest. You'll become a member. And members of The Skiff are known as Skiff Mates.
-    </p>
-    <p>
-      All Skiff Mates have personally choosen to be members of The Skiff. You can't buy a corporate membership to The Skiff for your team. And you can't get dedicated desks next to yours for your employees. The teams that work from The Skiff do so because their members individually choose to. And they continue to have the freedom to work wherever they like.
-    </p>
-    <p>
-      We don't have any VIPs that need to be treated differently from everyone else. If you work one day a week you should feel just as much of a sense of belonging as someone who has a dedicated desk. What you get from your membership is up to you. The more you participate, and take time to get to know your fellow coworkers, the more you'll feel at home.
+     Some members have got more work as a result of the relationships they've built here. Others have become recognised local authorities on topics by running events here. Many have made lasting friendships here.
     </p>
 
-    <h2 class="text-center">Inclusivity over specialty</h2>
-    <p>We welcome professionals of all kinds. The Skiff's founders were software specialists. But the more diverse our community becomes, the better we can all adapt to change and positively influence it.</p>
+    <p class="lead">
+      We don't have any VIPs, corporate members or teams that need to be treated differently from everyone else. If you work one day a week you should feel just as much of a sense of belonging as someone who has a dedicated desk.
+    </p>
 
-    <h2 class="text-center">Individuals over teams</h2>
-
-    <p>If you can work in a team full-time enjoy every minute of it. But The Skiff primarily exists to serve individuals.</p>
-
-    <p>Teams don't have the same needs as individuals, they have each other for support. And they will always put the needs of team members before those of other individuals outside the team. A team in a coworking space can very easily and unintentionally become the centre of attention. They prioritise communication with each other over everyone else. They hog resources that individuals would benefit from occasional use of. They usually also bring in significantly more cash than an individual ever could. So a space can become dependent on them - leaving a big hole when they grow out of a space or go out of business.</p>
-
-    <h2 class="text-center">Businesses over startups</h2>
-
-    <p>The Skiff best serves established businesses. If you’re just starting out and don’t yet feel financially sustainable we recommend you focus on that first.</p>
-
-    <p>The best way to save money if you’re a start up is to work from home for as long as you can. If you find yourself with a business that mostly involves just you, working alone at home you should consider spending some of your time at The Skiff. We’ll help you sustain that business without having to employee staff or take on an office of your own. We’ve had members join us at the point that they’re turning over around £20K per year and grow to over £100K per year while continuing to work alone.</p>
-  </div>
+    <p class="lead">
+      What you get from your membership is up to you. The more you participate, and take time to get to know your fellow coworkers, the more you'll feel at home.
+    </p>
+       <nav class="nav nav-pills nav-fill my-5">
+        <a class="nav-item nav-link active" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link" href="/stewardship">Stewardship</a>
+      </nav>
+</div>
 </div>
 
-<div class="row">
-  <div class="col-xs-12 col-md-8 my-5 mx-auto">
-  <h2>Six of The Skiff's Skiff Mates</h2>
-  </div>
-</div>
-
-<div class="card-deck">
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/andymattock.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Andy Mattock</h4>
-      <p class="card-text">An experienced graphic and web designer who combines creativity with technical know-how. Recent projects have included content-managed websites, brand identities, promotional and fundraising materials. Clients have ranged from start-ups and SMOs in Brighton to national charities and organisations.</p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-        "Since moving to Brighton in 2004 I’ve worked in several co-working spaces. The Skiff though seems unique in offering a more inclusive and collaborative experience.
-  You can be as involved as you like with what’s going on, both in terms of events and/or conversation, and cooperation.
-  When I first looked to move to the Skiff the 2.5 days plan was perfect for me as I was sharing child-care with my wife and I was able to partly work from home and partly escape to the office!"
-      </p>
-      </blockquote>
-    </div>
-  </div>
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/carolinebeavon.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Caroline Beavon</h4>
-      <p class="card-text">An infographic designer who helps organisations to make their information and data easier to digest. Caroline applies her background in journalism to create graphics that tell compelling stories.</p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-        "I joined the Skiff as soon as I moved to Brighton from Birmingham. There, I’d been renting a desk at a friends office for several years and loved the fact I had my own permanent desk but also being separate from their office business. I was even invited to their Xmas parties! I did a few years of working from home but in my small Birmingham flat it was a little claustrophobic and would often end up in coffee shops overdosing on caffeine!"
-      </p>
-      </blockquote>
-      <a href="/people/caroline-beavon" class="btn btn-primary btn-block">Learn more about Caroline</a>
-    </div>
-  </div>
-</div>
-<div class="card-deck">
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/danyoung.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Dan Young</h4>
-      <p class="card-text">A market researcher who helps the owners of energy and finance businesses to find new insights in their existing research and data. Dan applies over 17 years experience to cut straight to the commercially critical answers his clients need.</p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-      "When I first set up on Shed Research, I worked from home, from coffee shops, and latterly ina friend’s office in Brighton. I loved the freedom. But I missed being part of something. I missed the office parties, the jokes over the coffee machine, and just being around productive people. That’s what first attracted me to the Skiff.
-      </p>
-      <p class="card-text">
-      Another important reason was having people to bounce ideas off. A lot of my work requires me to think through problems creatively. For this, I needed to be stimulated and hear different perspectives. I joined the Skiff to meet lots of different people, working on lots of different things. It’s a real hub of enterprise and entrepreneurialism. What could be more stimulating than that?!"
-      </p>
-      </blockquote>
-    </div>
-  </div>
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/ellencubbin.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Ellen Cubbin</h4>
-      <p class="card-text">
-        A Laravel programmer who helps other programmers spend more time with their clients. Ellen's academic background in physics and music bring a balance of logic and creativity that you can depend on.
-      </p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-      "I'd just started freelancing again and was working from home.  I knew about The Skiff and was considering joining but then I had a meeting in the Skiff and liked it so much that I joined immediately. My environment is very important to me (part of my reason for freelancing).""
-      </p>
-      </blockquote>
-    </div>
-  </div>
-</div>
-<div class="card-deck">
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/izzycrouch.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Izzy Crouch</h4>
-      <p class="card-text">
-        A digital marketer who helps market-leading local businesses to acquire more customers via online channels. Izzy won’t work with businesses that that are unlikely to get a measurable return from an investment in online marketing.
-      </p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-      "I joined The Skiff when I relocated back to Sussex from Swansea. I had worked in co-working spaces in Swansea and knew it was the best way to build a network. I wanted to meet people both for work contacts and moral support and The Skiff has provide plenty of both."
-      </p>
-      </blockquote>
-    </div>
-  </div>
-  <div class="card mb-3">
-    <img class="card-img-top" src="/images/kyrandale.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h4 class="card-title">Kyran Dale</h4>
-      <p class="card-text">
-        
-      </p>
-      <blockquote class="blockquote">
-      <p class="card-text">
-      </p>
-      </blockquote>
-    </div>
-  </div>
-
-
-</div>
 </div>

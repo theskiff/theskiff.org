@@ -1,0 +1,57 @@
+---
+title: What's on at The Skiff
+layout: "print"
+sitemap_noindex: true
+sitemap_priority: 0.8
+
+captain:
+  first_name: Margaret
+  last_name: Ousby
+  they: she
+  them: her
+  their: her
+  image: https://getdrip.s3.amazonaws.com/uploads/image_upload/image/119241/embeddable_5d68b198-ea9a-41fa-a5df-363d5a2d1d43.jpg
+
+week:
+  date: "23-10-2017"
+  days:
+    -
+      name: Monday
+      events:
+        - show_and_tell
+    -
+      name: Tuesday
+      events:
+        - dataviz_brighton
+    -
+      name: Wednesday
+      events:
+        - the_farm
+    -
+      name: Thursday
+      events: []
+    -
+      name: Friday
+      events:
+        - drinks
+    -
+      name: Saturday
+      events: []
+
+---
+
+<div class="page">
+<%= partial "captain", :locals => {first_name: "Margaret", last_name: "Ousby", they: "she", them: "her", their: "her", image: "https://getdrip.s3.amazonaws.com/uploads/image_upload/image/119241/embeddable_5d68b198-ea9a-41fa-a5df-363d5a2d1d43.jpg"} %>
+</div>
+
+<% @i = 1 %>
+<% current_page.data.week.days.each do |day| %>
+  <% day.events.each do |event| %>
+    <% unless event.blank? %>
+      <div class="page">
+        <%= partial "event", :locals => {:event=>data.events[event], :week=>current_page.data.week.date, :day=>day.name, :index=>@i, } %>
+      </div>
+    <% @i += 1 %>
+    <% end %>
+  <% end %>
+<% end %>

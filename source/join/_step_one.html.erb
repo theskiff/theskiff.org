@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <div class="content">
+
+    <div class="d-flex flex-column flex-lg-row
+    justify-content-around justify-content-lg-around
+    align-items-stretch align-items-lg-center content-cards">
+    <div class="card bg-light col-xs-12 col-lg-5 col-xl-4">
+      <form action="https://www.getdrip.com/forms/641569789/submissions" method="post" data-drip-embedded-form="641569789">
+        <input type="hidden" id="drip-plan-id" name="fields[plan_id]" value="<%= current_page.data.plan_id %>"/>
+        <div class="card-body">
+          <%= image_tag "theskiff.svg", :width=>60, :class=>"d-block mx-auto mb-3" %>
+          <h4 class="card-title text-center"><%= current_page.data.title %></h4>
+          <p class="card-text">First things first. Who is this membership for?</p>
+          <div class="form-group">
+            <label class="sr-only" for="drip-first-name">First Name</label>
+            <input type="text" id="drip-first-name" name="fields[first_name]" placeholder="First Name" class="form-control" autofocus/>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="drip-last-name">First Name</label>
+            <input type="text" id="drip-last-name" name="fields[last_name]" placeholder="Last Name" class="form-control"/>
+            <small id="emailHelp" class="form-text text-muted">Skiff memberships are always in the name of one individual. If a different person or organisation is paying you can enter that on the next page.</small>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="drip-email">Email Address</label>
+            <input type="email" id="drip-email" name="fields[email]" placeholder="Email" class="form-control"/>
+            <small id="emailHelp" class="form-text text-muted">This is where we’ll send the information you need to access your new work space and community. It <strong>must</strong> be the email address of the person named above. We can send a copy of this information to another address if necessary.</small>
+          </div>
+          <div class="actions">
+            <input type="submit" name="submit" value="Proceed to membership summary" data-drip-attribute="sign-up-button" class="btn btn-secondary btn-block"/>
+
+          </div>
+        </div>
+      </form>
+
+      </div>
+
+      <div class="card bg-dark text-white col-xs-12 col-lg-5 col-xl-4">
+        <div class="card-body">
+          <h2 class="card-title">Did you know? You can't join The Skiff as a team</h2>
+          <p class="card-text">While we do have a few teams at The Skiff, each individual must retain the freedom to choose where they work. We don't provide space for companies that require their staff to work next to each other from 9 to 5.</p>
+          <p class="card-text">Imagine that! A work place filled with people who are only there when they want to be. And they're all people who want to meet you.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <section class="full-height">
+    <div class="left-half">
+
+    </div>
+    <div class="right-half">
+      <!-- <img src="/assets/images/brighton.jpg"> -->
+      <img src="/images/skiff-mates.jpg">
+    </div>
+  </section>
+</div>

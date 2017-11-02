@@ -1,0 +1,64 @@
+games_night:
+  name: Skiff Games Night
+  time: from 6pm
+  location: in The Mess
+  description: An evening of competative and cooperative board game playing amongst Skiff Mates.
+  cta: If you have any cool games (that aren't already in the Board Game Collection in the Mess) bring them along!
+pastries:
+  name: Skiff Pastries
+  time: from 10:30am
+  location: in The Mess
+  description: Pastries, coffee, tea and good company.
+  cta: Listen out for the bells.
+drinks:
+  name: Skiff Drinks
+  time: from 5pm
+  location: in The Mess
+  description: It's our every-other-week Friday drinks for members of The Skiff. End the week with your coworkers and some tasty beverages.
+  cta: Listen out for the bells at 5pm.
+welcome_lunch:
+  name: Local Welcome Lunch
+  time: from 12:30pm
+  location: at Grow 40 on Kensington Gardens
+  description: Come and join 8 of your fellow Skiff Mates for lunch at a local independent restaurant. New members get their lunch free this week. £15 per head charged to your next invoice for Skiff Mates.
+  cta: "Email: jon@theskiff.org for menu and details."
+show_and_tell:
+  name: Lunchtime Show and Tell
+  time: from 12:30pm
+  location: in The Mess
+  description: If you've got something to share, come along with anything you want to show.
+  cta: Feeling shy? Just come along and watch ... the more the merrier.
+the_farm:
+  name: Brighton Freelancers Farm
+  time: from 8pm
+  location: at Caxton Arms on North Gardens
+  description: A great reason to come into town for the day. Lots of Skiff Mates will be heading here from The Skiff. The Brighton Farm is a networking group for web designers, developers and people with related new media skills who live in Brighton and the surrounding areas. We meet weekly in different venues around Brighton and Hove.
+  link: http://www.brightonfarm.com/
+dataviz_brighton:
+  name: Data Visualisation Brighton Meetup
+  time: at 7:30
+  location: in The Engine Room
+  description: A group for anyone interested in data visualisation (users, designers, coders, artists, illustrators, scientists) to meet, chat and collaborate on anything data visualisation related.
+  cta: It's a multi-disciplinary practice so a great chance to collaborate and meet new people from different fields. The meetups will initially be informal but they may evolve into workshops and talks depending on demand.
+  link: http://www.datavisbrighton.com/
+imporvements_lunch:
+  name: Skiff Improvements Lunch
+  time: at 12:30
+  location: in The Mess
+  description: From 12:30 until 13:30 Jon will host a discussion in The Mess to explore what we need to be doing to improve The Skiff. If you’d like to influence what we prioritise working on please come along.
+  cta: Bring your own lunch and we’ll provide some extra nibbles.
+brighton_lean_agile:
+  name: Brighton Lean Agile Group
+  time: at 6:45
+  location: in The Engine Room
+  description: This is a group for anyone in the Brighton (UK) area to meet, discuss, explore and learn about all areas of Lean and Agile product development.
+  link: https://www.meetup.com/Brighton-Lean-Agile-Group/
+ocsussex:
+  name: "Open Coffee Sussex: Meet up"
+codebar:
+  name: codebar Brighton free coding workshop
+  time: from 6:30pm
+  location: in The Engine Room
+  description: codebar is a non-profit initiative that facilitates the growth of a diverse tech community by running regular programming workshops.
+  cta: Attend these workshops to learn programming in a safe and supportive environment at your own pace, or to share your knowledge and coach our students.
+  link: https://codebar.io/brighton

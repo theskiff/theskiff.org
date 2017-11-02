@@ -1,0 +1,346 @@
+<!--
+
+  To use: Run `python -m SimpleHTTPServer`
+  And then connect to localhost:8000/test.html
+
+-->
+
+<html>
+  <head>
+    <link rel='stylesheet' href='example-inc/modal.css' type='text/css' media='all'/>
+    <link rel='stylesheet' href='example-inc/style.css' type='text/css' media='all'/>
+  </head>
+  <body>
+
+
+    <h1>Drip Pro Tools</h1>
+    <table border="1">
+      <tr>
+        <th>Anonymous?</th>
+        <td id="stat_anon"></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td id="stat_email"></td>
+      </tr>
+      <tr>
+        <th>Offer</th>
+        <td id="stat_offer"></td>
+      </tr>
+      <tr>
+        <th>Content Leaderboard</th>
+        <td id="stat_leaderboard"></td>
+      </tr>
+      <tr>
+        <th>Focus Category</th>
+        <td id="stat_focus"></td>
+      </tr>
+      <tr>
+        <th>Tags</th>
+        <td id="stat_tags"></td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div id="offer_output">
+      Welcome! You're ready for... 
+      <strong><span data-placeholder="welcome"></span></strong> 
+      I hope you're having <span data-placeholder="timeofday"></span>
+    </div>
+
+    <br>
+
+    <div data-placeholder="ad"></div>
+
+    <br>
+
+    <div class="category-name">Category: 
+      <a href="#">Marketing</a>
+    </div>
+
+    <br>
+
+    <div>
+      <button onclick="_drip_pro.settings.increment_score('pricing', Math.floor(Math.random() * 1000)); location.reload()">Read article about Pricing</button> 
+      <button onclick="_drip_pro.settings.increment_score('marketing', Math.floor(Math.random() * 1000)); location.reload()">Read article about Marketing</button> 
+      <button onclick="_drip_pro.settings.increment_score('sales', Math.floor(Math.random() * 1000)); location.reload()">Read article about Sales</button>
+    </div>
+
+    <br>
+
+    <form action="#" data-drip-embedded-form="12345">
+      <input type="email" />
+      <input type="submit" />
+    </form>
+
+    <div id="survey-container">
+      <div class="survey-collapse-bar">
+        <a href="#" class="close-survey"></a>
+      </div>
+      <div class="survey-question">
+      </div>
+      <ul class="survey-answers">
+      </ul>
+    </div>
+
+    <script type="text/javascript">
+      window.mp = ['Viewed Test Page']
+    </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/modal.js"></script>
+    <script type="text/javascript" src="/javascripts/drip_pro.js"></script>
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {}; 
+      _dcs.account = '7521335';
+      
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true; 
+        dc.src = '//tag.getdrip.com/7521335.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+
+    <!-- Segment -->
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+      analytics.load("eLVsjS5ij2cwe6AYyHbrsU91HdvkkqtY");
+      analytics.page();
+      }}();
+    </script>
+
+    <script type="text/javascript">
+
+      window._drip_pro = new DripPro
+
+      window.drip_plinko = function(drip, page) {
+        var response = {}
+
+        if (drip.is_anon) {
+          response = {
+            offer: 'newsletter',
+            welcome: 'Newsletter',
+            modal: drip.file('newsletter-popup')
+          }
+        } else {
+          if (drip.has_tag('Purchased - Course')) {
+            response = {
+              offer: 'coaching',
+              welcome: 'Coaching'
+            }
+          } else {
+            response = {
+              offer: 'course',
+              welcome: 'My Course',
+              ad: drip.file('course-square-ad')
+            }
+          }
+        }
+
+        return response
+      }
+
+      window.survey_plinko = function(drip) {
+        if (!drip.attr('biz_need')) {
+          return {
+            attr: 'biz_need',
+            question: "What is the ONE thing you want for your business?",
+            random: true,
+            answers: {
+              one_on_one: "I want personalized help and coaching in specific areas to help me grow my business",
+              motivation: "I want to become more self-confident in my business",
+              tutorials: "I want to get better at business",
+              skill_aug: "I want training to help me offer more premium services to my clients",
+              community: "I want to have access to a community of freelancers and agencies"
+            }
+          }
+        }
+
+      }
+
+      window.drip_replacements = {
+        '#stat_anon': function(drip) {
+          return (drip.is_anon ? "No idea who this is" : "I know this person!")
+        },
+        '#stat_email': function(drip) {
+          return drip.email
+        },
+        '#stat_offer': function(drip) {
+          return JSON.stringify(drip.cn.offer)
+        },
+        '#stat_leaderboard': function(drip) {
+          return JSON.stringify(drip.cn.settings.content_leaderboard())
+        },
+        '#stat_focus': function(drip) {
+          var leader = drip.cn.settings.content_leaderboard()[0]
+          if (leader) return leader[0]
+        },
+        '#stat_tags': function(drip) {
+          return drip.tags().join(', ')
+        }
+      }
+
+      jQuery(function(){
+        window._drip_pro.init({
+          debug: true,
+          template_path: '/ad-examples/',
+          survey_trigger: function() {
+            return true // If a question is available, should the survey widget be triggered?
+          },
+          can_display: function(intent, options) {
+            return true // Given the "intent" (like modal), should we show it on this page? Useful for checking to see if you're on the checkout page, etc. and forcing DPT offers to not show.
+          },
+          pre_init: function() {
+            this.settings.track = this.settings.track.bind(this)
+            this.settings.score = this.settings.score.bind(this)
+            this.settings.increment_score = this.settings.increment_score.bind(this)
+            this.settings.content_leaderboard = this.settings.content_leaderboard.bind(this)
+          },
+          post_drip_response: function(payload) {
+            this.settings.track()
+            this.settings.score()
+
+            $.each(this.custom_fields(), function(key, value) {
+              $('table').append(
+                $('<tr>').append(
+                  $('<th>').text(key),
+                  $('<td>').text(value)
+                )
+              )
+            })
+          },
+          score: function(drip) {
+            var t = this
+            $('.category-name a').each(function() {
+              var tag_name = $(this).text()
+              tag_name = tag_name.toLowerCase().replace(/ /g, '_')
+              t.settings.increment_score(tag_name, "12345")
+            })
+          },
+          increment_score: function(category, article_id) {
+            var posts_cache_count = 30
+            if (!article_id) return
+            var category_posts = (this.custom_fields()[category] || '').split(',')
+            category_posts.push(article_id)
+            this.add_custom_field(category, _.uniq(_.filter(category_posts)).join(','))
+            var recent_posts = (this.custom_fields()['recent_posts'] || '').split(',')
+            var o = {} ; o[category] = article_id
+            recent_posts.push(JSON.stringify(o))
+            this.add_custom_field('recent_posts', _.last(_.uniq(_.filter(recent_posts)), posts_cache_count).join(','))
+          },
+          content_leaderboard: function() {
+            var recent_posts = (this.custom_fields()['recent_posts'] || '').split(',')
+            recent_posts = _.map(_.filter(recent_posts), JSON.parse)
+            total_posts = recent_posts.length
+            var posts_summary = {}
+            _.each(recent_posts, function(tuple) {
+              var key = _.keys(tuple)[0]
+              var value = tuple[key]
+              posts_summary[key] = posts_summary[key] || []
+              posts_summary[key].push(value)
+            })
+            _.each(posts_summary, function(value, key) {
+              percent = value.length / total_posts
+              posts_summary[key] = percent
+            })
+            var posts_ranked = _.sortBy(_.pairs(posts_summary), function(arr) {
+              return arr[1]
+            }).reverse()
+            return posts_ranked
+          },
+          track: function() {
+            var traits = { anon: true }
+            if (!this.is_anon) {
+              traits = {
+                anon: false,
+                email: this.drip_contact.email,
+                firstName: this.custom_fields()['MS_FNAME'],
+                lastName: this.custom_fields()['MS_LNAME']
+              }
+              $.each(this.tags(), function(idx, key) {
+                traits[key] = true
+              })
+            }
+
+            traits = $.extend(traits, this.custom_fields())
+            analytics.identify(traits.email, traits)
+
+            if (window.mp) {
+              analytics.track(window.mp[0], window.mp[1])
+            }
+
+            if ($('.article-header h1').length) {
+              this.add_tag('Read - ' + $('.article-header h1').text())
+            }
+          },
+          survey_widget: function(survey, drip) {
+            $('.survey-question').text(survey.question)
+            $.each(survey.keys, function(idx, key) {
+              var li = $('<li>').attr('data-value', key).text(survey.answers[key])
+              $('.survey-answers').append(li)
+            })
+            $('#survey-container').css('bottom', 0)
+            $('#survey-container li').click(function(e){
+              var value = $(this).data('value')
+              drip.add_custom_field(survey.attr, value)
+              $('#survey-container .survey-answers').hide()
+              $('#survey-container .survey-question').text('Thanks!')
+            })
+            $('#survey-container .close-survey').click(function(e){
+              e.preventDefault()
+              $('#survey-container').remove()
+            })
+          },
+          renderers: {
+
+            modal: function(intent, content, options) {
+              if (this.modal_setup) return
+              window._delayTimer = null
+              sensitivity = 20
+              delay = 1000
+
+              function handleMouseEnter(e) {
+                if (_delayTimer) {
+                  clearTimeout(_delayTimer);
+                  _delayTimer = null;
+                }
+              }
+
+              function handleMouseLeave(e) {
+                var t = this
+                var cookie_name = this.settings.cookie_prefix+'_ig_'+intent
+                if (e.clientY > sensitivity) return
+                if (this.storage.get(cookie_name)) return
+
+                _delayTimer = setTimeout(function(){
+                  if (jQuery.modal.isActive()) return
+                  this.debug('Displaying modal')
+                  var modal = jQuery('<div class="modal">')
+                                .data('placeholder', intent)
+                                .html(content)
+                                .appendTo('body')
+                                .modal()
+                  modal.on('modal:after-close', function(){
+                    t.storage.set(cookie_name, '1')
+                  })
+                }.bind(this), delay);
+              }
+        
+              jQuery('body').on('mouseenter', handleMouseEnter);
+              jQuery('body').on('mouseleave', handleMouseLeave.bind(this));
+              this.modal_setup = true
+            }
+
+          }
+        })
+      })
+
+    </script>
+
+  </body>
+</html>

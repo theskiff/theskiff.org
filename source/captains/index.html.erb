@@ -1,0 +1,64 @@
+---
+title: Members of The Skiff
+sitemap_noindex: true
+sitemap_priority: 0.8
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mx-auto my-5">
+      <h1 class="text-center">"After volunteering as a Captain for a week, I felt more at home than I had in any other work place"</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link active" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link" href="/stewardship">Stewardship</a>
+      </nav>
+      <h2 class="my-3">Skiff Mates who have volunteered to keep watch</h2>
+      <p class="lead">
+        Some Skiff Mates volunteer to spend a week providing a little extra support to Skiff Mates new and old. They get a few perks, including being able to pick the drinks and nibbles for social events. But most do it for the opportunity to meet more of their fellow Skiff Mates.
+      </p>
+      <p class="lead">
+        It a small commitment that simply requires them to be at The Skiff for most of the week. They continue to do their own work each day. But they're happy to be interupted a little more than usual. The Skiff doesn't have any full-time staff so captains, supported by other Skiff Mates, keep things running smoothly on a day-to-day basis. They keep an extra eye out for us all and deal with unexpected issues that really need someone in the space to handle them.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <% data.captains.to_a.reverse.each do |captain, profile| %>
+      <div class="col-lg-4">
+        <div class="card mb-3">
+          <img class="card-img-top" src="/images/<%= captain %>.jpg" alt="<%= profile.first_name %> <%= profile.last_name %>">
+          <div class="card-body">
+            <h4 class="card-title"><%= profile.first_name %> <%= profile.last_name %></h4>
+            <p class="card-text"><strong>Captaincy:</strong><br />
+            <% profile.captaincies.each do |captaincy| %>
+              <%= captaincy.strftime("%e %b %Y") %> to <%= (captaincy + 4).strftime("%e %b %Y") %><br />
+            <% end %>
+          </p>
+            <% if profile.profile == true %>
+              <a href="/members/<%= captain %>" class="btn btn-primary btn-block">Learn more about <%= profile.first_name %></a>
+              <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="row">
+      <h2 class="my-3">But they don't do it alone</h2>
+      <p class="lead">
+        All Skiff Mates continue to share responsibility for the things you'd expect to do on a typical day. Making coffee, answering the door, showing visitors around are all opportunities to meet people we wouldn't get to see at home. And it's in all of our interests to spot things that are unsafe, insecure, intimidating, broken, untidy or uncomfortable.
+    </p>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 mx-auto my-5">
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-item nav-link" href="/people">Your Community</a>
+        <a class="nav-item nav-link" href="/members">Your Skiff Mates</a>
+        <a class="nav-item nav-link active" href="/captains">Your Captains</a>
+        <a class="nav-item nav-link" href="/stewardship">Stewardship</a>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+
+<h3>#<%= index %> <%= event.name %> <%= event.time %> <%= event.location %> on <%= day %></h3>
+<p><%= event.description %></p>
+<% unless event.cta.blank? %>
+  <p><%= event.cta %></p>
+<% end %>
+<% unless event.link.blank? %>
+  <p>Learn more: <%= link_to event.link, event.link %></p>
+<% end %>

@@ -1,5 +1,8 @@
 
 <h3>#<%= index %> <%= event.name %> <%= event.time %> <%= event.location %> on <%= day %></h3>
+<% unless event.special.blank? %>
+  <p><strong>This one's special: <%= event.special %></strong></p>
+<% end %>
 <p><%= event.description %></p>
 <% unless event.cta.blank? %>
   <p><%= event.cta %></p>

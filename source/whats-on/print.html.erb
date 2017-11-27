@@ -5,15 +5,16 @@ sitemap_noindex: true
 sitemap_priority: 0.8
 
 captain:
-  first_name: Margaret
-  last_name: Ousby
-  they: she
-  them: her
-  their: her
-  image: https://getdrip.s3.amazonaws.com/uploads/image_upload/image/119241/embeddable_5d68b198-ea9a-41fa-a5df-363d5a2d1d43.jpg
+  first_name: Sim
+  last_name: Brody
+  they: he
+  theyre: he's
+  them: him
+  their: his
+  image: /images/sim-brody.jpg
 
 week:
-  date: "23-10-2017"
+  date: "27-11-2017"
   days:
     -
       name: Monday
@@ -26,14 +27,17 @@ week:
     -
       name: Wednesday
       events:
+        - farm_open_day
+        - pilates
         - the_farm
     -
       name: Thursday
-      events: []
+      events:
+        - imporvements_lunch
     -
       name: Friday
       events:
-        - drinks
+        - managing_stress
     -
       name: Saturday
       events: []
@@ -41,7 +45,7 @@ week:
 ---
 
 <div class="page">
-<%= partial "captain", :locals => {first_name: "Margaret", last_name: "Ousby", they: "she", them: "her", their: "her", image: "https://getdrip.s3.amazonaws.com/uploads/image_upload/image/119241/embeddable_5d68b198-ea9a-41fa-a5df-363d5a2d1d43.jpg"} %>
+<%= partial "print_captain", :locals => current_page.data.captain %>
 </div>
 
 <% @i = 1 %>
@@ -49,7 +53,7 @@ week:
   <% day.events.each do |event| %>
     <% unless event.blank? %>
       <div class="page">
-        <%= partial "event", :locals => {:event=>data.events[event], :week=>current_page.data.week.date, :day=>day.name, :index=>@i, } %>
+        <%= partial "print_event", :locals => {:event=>data.events[event], :week=>current_page.data.week.date, :day=>day.name, :index=>@i, } %>
       </div>
     <% @i += 1 %>
     <% end %>

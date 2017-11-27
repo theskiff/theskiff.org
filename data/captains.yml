@@ -64,6 +64,23 @@ stuart-wallace:
   profile: false
   captaincies:
     - 2017-11-20
+sim-brody:
+  first_name: Sim
+  last_name: Brody
+  profile: false
+  captaincies:
+    - 2017-11-27
+you:
+  first_name: You
+  profile: false
+  captaincies:
+    - 2017-12-04
+chris-hollands:
+  first_name: Chris
+  last_name: Hollands
+  profile: false
+  captaincies:
+    - 2017-12-09
 you:
   first_name: You
   profile: false

@@ -1,0 +1,17 @@
+<div class="text-center mt-5">
+<h1 class="display-2">#<%= index %> <%= event.name %></h1>
+<h1><%= event.time %> <%= event.location %><br/>on <%= day %></h2>
+
+<% unless event.special.blank? %>
+  <h2><strong>This one's special: <%= event.special %></strong></h2>
+<% end %>
+<h2><%= event.description %></h2>
+
+
+<!--<% unless event.cta.blank? %>
+  <h2><%= event.cta %></h2>
+<% end %>
+<% unless event.link.blank? %>
+  <h2>Learn more: <%= link_to event.link, event.link %></h2>
+<% end %>-->
+</div>

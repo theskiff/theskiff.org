@@ -28,6 +28,7 @@ show_and_tell:
   location: in The Mess
   description: If you've got something to share, come along with anything you want to show.
   cta: Feeling shy? Just come along and watch ... the more the merrier.
+  link: https://blog.theskiff.org/tips-for-a-good-show-and-tell-talk-52a0cea69ccd
 the_farm:
   name: Brighton Freelancers Farm
   time: from 8pm
@@ -89,3 +90,58 @@ async:
   description: Async meets twice a month in Brighton & Hove, UK, to learn, discuss and play with JavaScript and related technologies. We host talks, hack nights, show n' tells and community events, all of which are free.
   cta: Doors open 7.15pm, main session begins 7.45pm, we end around 9.30pm and continue nearby for an evening social.
   link: https://asyncjs.com/
+fish_friday:
+  name: "Fish & Chips Friday"
+  time: at 12:30pm
+  location: in The Mess
+  description: On Friday lunch time the Captain is going to get in a big order of fish and chips. We'll all enjoy them together around the table in the Mess.
+  cta: Keep an eye out for a note from Caroline on Groupbuzz and Slack
+cto_craft:
+  name: CTOs in Conversation
+  time: at 6:45pm
+  location: in The Engine Room
+  description: Crossing the chasm from technology leader at a small, early stage startup to leading multiple teams and delegating day-to-day duties can be a jolt. 
+  cta: Learn from a seasoned CTO who has made the leap, hear how they dealt with the changes of role and culture, the surprises and challenges they faced and how they'd do things differently if they had to do it again.
+  link: https://www.meetup.com/CTO-Craft/events/244146602/
+pilates:
+  name: Pilates
+  time: at 1:30pm
+  location: in The Bridge
+  description: Improve strength, flexibility and balance over your lunch break. Cost £8.
+  cta: "Email: adrianhemstalk@gmail.com for more information"
+webdev:
+  name: Brighton Web Development Meetup
+  time: at 7:00pm
+  location: in The Engine Room
+  description: If you build for the web, whether just for a hobby or professionally, then this meetup is designed for you.
+  link: https://www.meetup.com/Brighton-Web-Development-Meetup/
+angular:
+  name: Brighton Angular2+ Meetup
+  time: at 7:00pm
+  location: in The Engine Room
+  description: We're a local community group, sharing ideas and learning together. We're also interested to find out which other startups / houses in the area are taking the plunge into Angular 2+. Fancy joining up for a no gloat quid pro quo? Industrious self starting nubes welcome.
+  link: https://www.meetup.com/Brighton-Worthing-Angular2-Meetup/
+lan_party:
+  name: LAN Party
+  time: from 2pm
+  location: in The Engine Room
+  description: An afternoon of computer gaming. Quake Live Tournament, Overwatch, PUBG, Quake, Left for Dead 2 and any other games people can suggest.
+  cta: Bring along a Sweet Gaming Rig and we'll add you into the network. Please feel free to invite people you know along who may also have an SGR (Sweet Gaming Rig) and may want to add their SGR to the mix.
+functional_brighton:
+  name: Functional Brighton
+  time: at 7:00
+  location: in The Engine Room
+  description: Functional Brighton is a Brighton, UK meetup group that aims to bring together people interested in functional programming.
+  link: https://www.meetup.com/Functional-Brighton/
+managing_stress:
+  name: Managing Stress Lunchtime Workshop
+  time: at 1pm
+  location: The Mess
+  description: A free 30-minute workshop exploring the causes of stress and how to build your own resources to tackle it. It will be run by Amanda Walderman, who has worked on promoting workforce wellbeing with some of the UK's biggest companies.
+  cta: She has 15 years experience working in mental health care settings, supporting people with anxiety, depression, stress, relationship issues and addiction.
+farm_open_day:
+  name: Open Day for members of Brighton Farm
+  time: from 8:30am
+  location: at The Skiff
+  description: We're inviting members of Brighton Farm freelancers group to spend all or part of the day at The Skiff at no charge.
+  cta: Please take a few minutes to say hello to anyone you don't recognise. Show them how welcoming The Skiff can be.

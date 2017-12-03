@@ -161,7 +161,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://js.quaderno.io/v2/"></script>
-    <%= javascript_include_tag "drip_pro.js" %>
     <!-- Drip -->
     <script type="text/javascript">
       var _dcq = _dcq || [];
@@ -176,7 +175,6 @@
         s.parentNode.insertBefore(dc, s);
       })();
     </script>
-    <%= javascript_include_tag "site" %>
     <% if content_for?(:javascript) %>
       <%= yield_content :javascript %>
     <% end %>

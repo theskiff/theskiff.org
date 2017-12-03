@@ -1,9 +1,8 @@
 ---
-title: Join The Skiff as a 2nd Mate
+title: The Skiff - Payment
 layout: "no-nav"
 sitemap_noindex: true
 sitemap_priority: 0.8
-plan_id: 2ndmate
 ---
 <style>
     /* Blue outline on focus */
@@ -23,152 +22,93 @@ plan_id: 2ndmate
     justify-content-around justify-content-lg-around
     align-items-stretch align-items-lg-center content-cards">
     <div class="card bg-light col-xs-12 col-lg-5 col-xl-4">
-      <p>Subtotal: &pound;<span class="quaderno-subtotal"></span></p>
-      <p>Taxes: &pound;<span class="quaderno-taxes"></span></p>
-      <p>Total: &pound;<span class="quaderno-total"></span></p>
-      <form action="" id="payment-form" 
-            method="post"
-            data-gateway="stripe"
-            data-key="pk_live_vzQcNcdarGQFQH7vxqfL"
-            data-plan="communitymate2017"
-            data-amount="1500"
-            data-taxes="included">
+        <div class="card-body">
 
-        
-          <div class="card-body">
-            <div id="card-errors" role="alert"></div>
+          <p><strong class="member-first-name"></strong> <strong class="member-last-name"></strong> (<strong class="member-email"></strong>) wishes to become a <strong class="plan_name"></strong> of The Skiff.<p>
 
-            <input type="hidden" value="1" data-quaderno="quantity" />
+          <p>The cost will be &pound;<strong class="quaderno-subtotal"></strong> per month plus VAT of &pound;<strong class="quaderno-taxes"></strong>. Your card will be charged a total of &pound;<strong class="quaderno-total"></strong> on the <strong class="renewal-date"></strong> of every month.</p>
 
-            <fieldset>
-              <div class="form-row">
-                <div class="col">
-                  <div class="form-group">
-                    <label>First Name</label>
-                      <input data-quaderno="first-name" class="form-control"/>
-                    
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Last Name</label>
-                      <input data-quaderno="last-name" class="form-control"/>
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Company Name</label>
-                  <input data-quaderno="company-name" class="form-control"/>
-                
-              </div>
+          <p>This month you will additionally pay a deposit of &pound;<strong class="quaderno-total"></strong>. So the total charges to your card will be &pound;<strong class="month-total"></strong></p>
 
-              <div class="form-group">
-                <label>Email</label>
-                  <input data-quaderno="email" class="form-control"/>
-                
-              </div>
+          <p>Payment will be made by <strong class="billing-company"></strong>. Invoices and payment recipts will be sent to <strong class="billing-email"></strong>. <a href="/join">Change this</a>.<p>
 
-              <div class="form-group">
-                <label>Street Line 1</label>
-                  <input data-quaderno="street-line-1" class="form-control"/>
-                
-              </div>
+          <a href="#payment-form" class="d-block d-sm-block d-md-block d-lg-none btn btn-secondary btn-block">Continue</a>
+          <p class="text-center">
+          
+          </p>
+          <p class="d-none d-md-block d-lg-block"><small>Your deposit will be refunded after your final subscription payment has been made and your keyfob has been returned. If you wish to downgrade or cancel your membership you must give us one month's notice by telling us <strong>before</strong> your final monthly renewal.</small></p>
+          <p class="d-none d-md-block d-lg-block"><small>e.g. If you wish your subscription to end on the <strong class="renewal-date"></strong> of July you need to tell us before your subscription renews on the <strong class="renewal-date"></strong> of June. We cannot refund unused parts of a monthly subscription.</small></p>
 
-              <div class="form-group">
-                <label>Street Line 2</label>
-                  <input data-quaderno="street-line-2" class="form-control"/>
-                
-              </div>
-              <div class="form-row">
-                <div class="col">
-                  <div class="form-group">
-                    <label>City</label>
-                      <input data-quaderno="city" class="form-control"/>
-                    
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="form-group">
-                    <label>Postal Code</label>
-                      <input data-quaderno="postal-code" class="form-control"/>
-                    
-                  </div>
-                </div>
-              </div>
 
+        </div>
+      </div>
+
+      <div class="card bg-light col-xs-12 col-lg-5 col-xl-4">
+        <form action="https://www.getdrip.com/forms/766381217/submissions" id="payment-form" 
+              method="post"
+              data-gateway="stripe"
+              data-key="pk_live_vzQcNcdarGQFQH7vxqfL"
+              data-taxes="included"
+              data-drip-embedded-form="766381217">
+
+          
+            <div class="card-body">
+              <div id="card-errors" role="alert"></div>
+              <a name="payment-form"></a> 
+              <input type="hidden" value="1" data-quaderno="quantity" />
+              <input type="hidden" id="drip-plan-id" name="fields[plan_id]" />
+              <input type="hidden" id="drip-plan-name" name="fields[plan_name]" />
+              <input type="hidden" id="drip-plan-amount" name="fields[plan_amount]" />
+              <input type="hidden" data-quaderno="email" id="drip-email" name="fields[email]" />
+              <input type="hidden" data-quaderno="first-name" id="drip-first-name" name="fields[first_name]"/>
+              <input type="hidden" data-quaderno="last-name" id="drip-last-name" name="fields[last_name]"/>
+              <input type="hidden" data-quaderno="street-line-1" id="drip-company" name="fields[company]"/>              
+              <input type="hidden" data-quaderno="billing_email" id="drip-billing-email" name="fields[billing_email]"/>
               <input type="hidden" value="GB" data-quaderno="country"/>
 
               <div class="form-group">
-                <label>Region</label>
-                  <input data-quaderno="region" class="form-control"/>
+                <label for="name">Name on Card</label>
+                <div class="input-group">
+                  <span class="input-group-addon d-none d-md-block d-lg-block"><span class="oi oi-person" title="person" aria-hidden="true"></span></span>
+                  <input type="text" class="form-control" id="name" placeholder="MRS J SMITH">
+                </div>
               </div>
-
-
               <div class="form-group">
-                <label>VAT Number</label>
-                <input data-quaderno="vat-number" class="form-control"/>
+                <label for="card-number">Credit Card Number</label>
+                <div class="input-group">
+                  <span class="input-group-addon d-none d-md-block d-lg-block"><span class="oi oi-credit-card" title="credit-card" aria-hidden="true"></span></span>
+                  <span id="card-number" class="form-control" data-quaderno="number">
+                      <!-- Stripe Card Element -->
+                  </span>
+                </div>
               </div>
-
-              <div class="form-group">
-                <label>Coupon</label>
-                  <input data-quaderno="coupon" class="form-control"/>
-              </div>
-            </fieldset>
-
-
-            <div class="form-group">
-              <label for="name">Name on Card</label>
-              <div class="input-group">
-                <span class="input-group-addon"><span class="oi oi-person" title="person" aria-hidden="true"></span></span>
-                <input type="text" class="form-control" id="name" placeholder="MRS J SMITH">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="card-number">Credit Card Number</label>
-              <div class="input-group">
-                <span class="input-group-addon"><span class="oi oi-credit-card" title="credit-card" aria-hidden="true"></span></span>
-                <span id="card-number" class="form-control" data-quaderno="number">
-                    <!-- Stripe Card Element -->
-                </span>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="col">
-                <div class="form-group">
-                  <label for="card-cvc">CVC Number</label>
-                  <div class="input-group">
-                    <span class="input-group-addon"><span class="oi oi-lock-locked" title="lock-locked" aria-hidden="true"></span></span>
-                    <span id="card-cvc" class="form-control" data-quaderno="cvc">
-                      <!-- Stripe CVC Element -->
-                    </span>
+              <div class="form-row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="card-cvc">CVC <span class="d-none d-md-block d-lg-block">Number</span></label>
+                    <div class="input-group">
+                      <span class="input-group-addon d-none d-md-block d-lg-block"><span class="oi oi-lock-locked" title="lock-locked" aria-hidden="true"></span></span>
+                      <span id="card-cvc" class="form-control" data-quaderno="cvc">
+                        <!-- Stripe CVC Element -->
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="card-exp">Exp. <span class="d-none d-md-block d-lg-block">Date</span></label>
+                    <div class="input-group">
+                      <span class="input-group-addon d-none d-md-block d-lg-block"><span class="oi oi-calendar" title="calendar" aria-hidden="true"></span></span>
+                      <span id="card-exp" class="form-control" data-quaderno="exp-month">
+                          <!-- Stripe Card Expiry Element -->
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="form-group">
-                  <label for="card-exp">Expiration</label>
-                  <div class="input-group">
-                    <span class="input-group-addon"><span class="oi oi-calendar" title="calendar" aria-hidden="true"></span></span>
-                    <span id="card-exp" class="form-control" data-quaderno="exp-month">
-                        <!-- Stripe Card Expiry Element -->
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button id="payment-submit" class="btn btn-primary btn-block">Submit Payment</button>
-        </div>
-      </form>
-
-      </div>
-
-      <div class="card bg-dark text-white col-xs-12 col-lg-5 col-xl-4">
-        <div class="card-body">
-          <h2 class="card-title">Did you know? You can't join The Skiff as a team</h2>
-          <p class="card-text">While we do have a few teams at The Skiff, each individual must retain the freedom to choose where they work. We don't provide space for companies that require their staff to work next to each other from 9 to 5.</p>
-          <p class="card-text">Imagine that! A work place filled with people who are only there when they want to be. And they're all people who want to meet you.</p>
-      </div>
+              <button id="payment-submit" class="btn btn-secondary btn-block">Subscribe</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -177,8 +117,7 @@ plan_id: 2ndmate
 
     </div>
     <div class="right-half">
-      <!-- <img src="/assets/images/brighton.jpg"> -->
-      <img src="/images/skiff-mates.jpg">
+
     </div>
   </section>
 </div>
@@ -207,7 +146,7 @@ plan_id: 2ndmate
             hiddenInputQ.setAttribute('data-quaderno', 'transactionDetails');
             hiddenInputQ.setAttribute('value', response.details);
             form.appendChild(hiddenInputQ);
-            // form.submit();
+            form.submit();
           },
           error: function(status, response){
             var errorElement = document.getElementById('card-errors');
@@ -221,8 +160,52 @@ plan_id: 2ndmate
 
       };
 
+      function getOrdinalNum(n) {
+        return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '');
+      }
 
       $(document).ready(function(){
+          $('.quaderno-total').bind("DOMSubtreeModified",function(){
+            $('.month-total').html((parseFloat($('.quaderno-total').html())*2));
+            var date = new Date();
+            $('.renewal-date').html(getOrdinalNum(date.getDate()));
+          });
+
+          var emailElement = document.getElementById('drip-email');
+          var planIdElement = document.getElementById('drip-plan-id');
+          var planNameElement = document.getElementById('drip-plan-name');
+          var planAmountElement = document.getElementById('drip-plan-amount');
+          var firstNameElement = document.getElementById('drip-first-name');
+          var lastNameElement = document.getElementById('drip-last-name');
+          var companyElement = document.getElementById('drip-company');
+          var billingEmailElement = document.getElementById('drip-billing-email');
+          var paymentForm =  document.getElementById('payment-form');
+
+          _dcq.push(['identify', { success: function(payload){
+            emailElement.setAttribute('value', payload.email);
+            $('.member-email').html(payload.email)
+            planIdElement.setAttribute('value', payload.custom_fields.plan_id);
+            paymentForm.setAttribute('data-plan', payload.custom_fields.plan_id);
+            $('.plan_id').html(payload.custom_fields.plan_id)
+
+            planAmountElement.setAttribute('value', payload.custom_fields.plan_amount);
+            paymentForm.setAttribute('data-amount', payload.custom_fields.plan_amount);
+            $('.plan_amount').html(payload.custom_fields.plan_amount)
+
+
+            planNameElement.setAttribute('value', payload.custom_fields.plan_name);
+            $('.plan_name').html(payload.custom_fields.plan_name)
+
+            firstNameElement.setAttribute('value', payload.custom_fields.first_name);
+            $('.member-first-name').html(payload.custom_fields.first_name)
+            lastNameElement.setAttribute('value', payload.custom_fields.last_name);
+            $('.member-last-name').html(payload.custom_fields.last_name)
+            companyElement.setAttribute('value', payload.custom_fields.company);
+            $('.billing-company').html(payload.custom_fields.company)
+            billingEmailElement.setAttribute('value', payload.custom_fields.billing_email);
+            $('.billing-email').html(payload.custom_fields.billing_email)
+
+          }}])
 
           // Create a Stripe client
           var stripe = Stripe('pk_8Lp8s7Ix89Kp6ZcwcQLrEsNukVZii');

@@ -1,9 +1,3 @@
-alice-clarke:
-  first_name: Alice
-  last_name: Clarke
-  profile: false
-  captaincies:
-    - 2017-09-11
 ben-edwards:
   first_name: Ben
   last_name: Edwards
@@ -81,8 +75,10 @@ chris-hollands:
   profile: false
   captaincies:
     - 2017-12-11
-you:
-  first_name: You
+alice-clarke:
+  first_name: Alice
+  last_name: Clarke
   profile: false
   captaincies:
     - 2017-12-18
+    - 2017-09-11

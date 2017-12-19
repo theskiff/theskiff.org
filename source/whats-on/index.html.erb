@@ -4,16 +4,16 @@ sitemap_noindex: true
 sitemap_priority: 0.8
 
 captain:
-  first_name: Sim
-  last_name: Brody
-  they: he
-  theyre: he's
-  them: him
-  their: his
-  image: /images/sim-brody.jpg
+  first_name: Alice
+  last_name: Clarke
+  they: she
+  theyre: she's
+  them: her
+  their: her
+  image: /images/alice-clarke.jpg
 
 week:
-  date: "27-11-2017"
+  date: "18-12-2017"
   days:
     -
       name: Monday
@@ -21,25 +21,22 @@ week:
         - show_and_tell
     -
       name: Tuesday
-      events:
-        - dataviz_brighton
+      events: []
     -
       name: Wednesday
       events:
-        - farm_open_day
+        - xmasquiz
         - pilates
-        - the_farm
     -
       name: Thursday
-      events:
-        - imporvements_lunch
+      events: []
     -
       name: Friday
-      events:
-        - managing_stress
+      events: []
     -
       name: Saturday
       events: []
+
 
 ---
 
@@ -55,21 +52,20 @@ week:
 
       <h2>The Week <%= Date.parse(current_page.data.week.date).strftime("%e %B %Y") %> at The Skiff</h2>
 
-      <ul>
+
         <% @i = 1 %>
         <% current_page.data.week.days.each do |day| %>
           <% unless day.events.empty? %>
-            <li><%= day.name %>
+            <h3><%= day.name %></h3>
               <ul>
                 <% day.events.each do |event| %>
                 <li>#<%= @i %> <%= data.events[event].name %> <%= data.events[event].time %> <%= data.events[event].location %></li>
                 <% @i += 1 %>
                 <% end %>
               </ul>
-            </li>
           <% end %>
         <% end %>
-      </ul>
+
 
       <h2>The Details</h2>
 
@@ -88,9 +84,12 @@ week:
       <br />
       Have a great week!<br />
       <br />
-      Jon, Anna &amp; James<br />
+      Jon &amp; Anna<br />
       <br />
-      PS If you'd like to volunteer to be Captain let me know and I'll share more with you about what's involved. We need someone for the weeks commencing 4th and 18th December.
+      PS We're working on a free course to help people like you have a happier 2018 while continuing to work from home. Over 500 people have signed up to the course.<br />
+      It would be fantastic to include your answers to some of their questions about working from home.<br />
+      If you're happy to help by providing a sentence or two in response to a series of questions please click here:
+      [Answer some common homeworking questions]
     </div>
   </div>
 </div>

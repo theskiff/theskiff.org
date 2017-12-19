@@ -48,9 +48,9 @@ imporvements_lunch:
   location: in The Mess
   description: From 12:30 until 13:30 Jon will host a discussion in The Mess to explore what we need to be doing to improve The Skiff. If you’d like to influence what we prioritise working on please come along.
   cta: Bring your own lunch and we’ll provide some extra nibbles.
-brighton_lean_agile:
+leanagile:
   name: Brighton Lean Agile Group
-  time: at 6:45
+  time: at 7pm
   location: in The Engine Room
   description: This is a group for anyone in the Brighton (UK) area to meet, discuss, explore and learn about all areas of Lean and Agile product development.
   link: https://www.meetup.com/Brighton-Lean-Agile-Group/
@@ -84,7 +84,6 @@ brighton_mobile:
   link: https://www.meetup.com/Brighton-Mobile/
 async:
   name: "Async: A JavaScript meetup for Brighton & Hove"
-  special: "It's the 2017 International Show N' Tell"
   time: at 7:15pm
   location: in The Engine Room
   description: Async meets twice a month in Brighton & Hove, UK, to learn, discuss and play with JavaScript and related technologies. We host talks, hack nights, show n' tells and community events, all of which are free.
@@ -145,3 +144,33 @@ farm_open_day:
   location: at The Skiff
   description: We're inviting members of Brighton Farm freelancers group to spend all or part of the day at The Skiff at no charge.
   cta: Please take a few minutes to say hello to anyone you don't recognise. Show them how welcoming The Skiff can be.
+farm_xmas:
+  name: Brighton Farm Christmas Party
+  time: from 8:30am
+  location: at The Skiff
+  description: Skiff Mates are invited to join this dinner at Brighton Marina Yacht club. A three course meal with vegetarian and vegan options and tickets are only £20 per person! 
+  cta: Get in touch with Hazlitt Eastman (@haze on Slack) to book your spot.
+  link: https://theskiff.groupbuzz.io/topics/15856-skiff-mates-come-on-down-to-the-fabulous-brighton-farm-xmas-party
+wiredsussex:
+  name: Wired Sussex Christmas Members Meet Up
+  time: from 5:30pm
+  location: at Patterns Bar, Marine Parade
+  description: Meeting other members and talking to Wired Sussex about what you and your company need is one of the best ways of getting the most out of your Wired Sussex membership.
+  cta: Join us for some festive fun, seasonal tunes, mulled wine/cider, mince pies. Wearing questionable Christmas jumpers, hats or accessories are optional but highly encouraged and perfect for all those group photo opportunities.
+  link: https://www.eventbrite.co.uk/e/wired-sussex-members-christmas-meetup-tickets-39085987240
+skiffmashour:
+  name: Skiffmas Hour
+  time: from 3pm
+  location: at The Skiff
+  description: Skiffmas Captain, Chris Hollands, will be looking for a few volunteers to help deck the halls, put up the Christmas Tree and make some early preparations.
+skiffmas:
+  name: Skiffmas Party
+  time: from 5:00pm
+  location: at The Skiff
+  description: Our biggest event of the year. This will be our 10th annual Skiffmas Party. Captain Chris Hollands is putting on a great spread of food, drink and entertainment.
+  cta: Bring a guest, a bottle and maybe a dish to share.
+xmasquiz:
+  name: Christmas Quiz and Festive Nibbles
+  time: from 12:30
+  location: The Mess
+  description: Captain Alice Clarke is organising some daytime festivites over lunch.

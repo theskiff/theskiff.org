@@ -1,0 +1,39 @@
+---
+title: Quotes about The Skiff
+sitemap_noindex: true
+sitemap_priority: 0.5
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 mx-auto my-5">
+      <h1 class="text-center">The Skiff in Skiff Mates own words</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% data.testimonials.to_a.each do |skiffmate, profile| %>
+      <% profile.quotes.each do |quote| %>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="card bg-info mb-3">
+            <div class="card-body">
+              <blockquote class="blockquote text-center mb-0">
+                <p class="mb-0">"<%= quote %>"</p>
+                <div class="text-muted mx-auto text-left d-flex justify-content-center mt-2">
+                  <img class="rounded-circle float-left mr-2" src="/images/<%= skiffmate %>.jpg" alt="<%= profile.first_name %> <%= profile.last_name %>" height="66">
+                  <p class="mb-0">
+                    <%= profile.first_name %> <%= profile.last_name %>
+                    <% if profile.profile == true %>
+                      <a href="/members/<%= skiffmate %>" class="btn btn-sm btn-outline-dark">View profile</a>
+                    <% end %>
+                    <br />
+                    <small>Skiff Mate since <%= profile.since.strftime("%B %Y") %></small>
+                  </p>
+                </div>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

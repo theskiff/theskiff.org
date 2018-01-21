@@ -174,3 +174,9 @@ xmasquiz:
   time: from 12:30
   location: The Mess
   description: Captain Alice Clarke is organising some daytime festivites over lunch.
+ruby:
+  name: Brighton Ruby Meetup
+  time: at 18:30pm
+  location: in The Engine Room
+  description: A group for Rubyists on the South Coast, centred on Brighton. A broad church, we're nice first, 'right' second.
+  link: https://www.meetup.com/Brighton-Ruby-Group/

@@ -1,0 +1,141 @@
+matt-oakes:
+  first_name: Matt
+  last_name: Oakes
+  since: 2017-01-06
+  profile: false
+  quotes:
+    - The people at The Skiff are friendly and helpful. They work in a wide range of different industries which gives many opportunities to gain insights that you would not be able to get on your own.
+    - The Skiff is a place where you can focus on work when you need to and chat and socialise when you want to.
+    - There are a variety of working areas to suit your mood and regular social events like Show & Tell, Thursday pastries, and Skiff Drinks every other Friday.
+    - For me, as a freelance mobile app developer, the real benefit of The Skiff is finding great people to collaborate with. Since joining, I have worked with many other Skiff Mates and been referred to clients I would not have otherwise.
+    - The Skiff has been a brilliant place to work and meet people. After just 8 months of working from home and coffee shops, The Skiff was exactly what I needed to stop myself going crazy.
+    - The space is relaxed and socialble with regular events such as weekly "show & tells" and biweekly Friday drinks.
+    - It's a great place to meet all sorts of freelancers and remote workers (not just techie types!) and exchange ideas and work. Highly recommended!
+lizzie-davey:
+  first_name: Lizzie
+  last_name: Davey
+  since: 2016-11-21
+  profile: true
+  quotes:
+     - The Skiff is a place where all different kinds of people can come together and share a collective creative space.
+     - It’s perfect for batting ideas around and getting help in disciplines I maybe don’t know so much about.
+     - It’s been really eye-opening (and fun!) learning about what other people do and seeing the amazing things everyone else is working on.
+     - The best part is the atmosphere. It’s really welcoming and comfortable, so it’s the perfect home away from home! 
+     - For me, as a writer, the real benefit of The Skiff is bouncing around ideas. I’ve learned tons about other industries, which I’ve been able to weave into my client work, but it’s also a really creative place filled with people with amazing ideas.
+     - If I’m ever struggling with a piece (fiction or non-fiction), I know I’ll always have someone to ask for help!
+     - I decided the Skiff’s laidback atmosphere and vibrant social scene was exactly what I needed.
+simon-popple:
+  first_name: Simon
+  last_name: Popple
+  since: 2014-10-06
+  profile: true
+  quotes:
+    - The Skiff offers a perfect refuge!
+ellen-cubbin: 
+  first_name: Ellen
+  last_name: Cubbin
+  since: 2016-11-30
+  profile: true
+  quotes:
+    - I had a meeting in the Skiff and liked it so much that I joined immediately.
+izzy-crouch:
+  first_name: Izzy
+  last_name: Crouch
+  since: 2015-04-17
+  profile: true
+  quotes:
+    - I joined The Skiff when I relocated back to Sussex from Swansea.
+    - I wanted to meet people both for work contacts and moral support and The Skiff has provide plenty of both.
+andy-mattock:
+  first_name: Andy
+  last_name: Mattock
+  since: 2015-11-25
+  profile: true
+  quotes:
+    - The Skiff seems unique in offering a more inclusive and collaborative experience.
+mike-hadlow:
+  first_name: Mike
+  last_name: Hadlow
+  since: 2012-07-30
+  profile: false
+  quotes:
+    - I'm a freelance software developer. The Skiff is a great place to work in the centre of Brighton.
+    - It's a great space with a range of different rooms depending on how much noise/music you want around.
+    - It's very friendly with lots of events and a fortnightly party.
+    - Incredibly diverse range of people. Coffee, tea and fruit on tap.
+    - Jon and Anna who run the Skiff are the nicest people you could wish to have looking after your co-working space.
+    - I've been a member for more than 3 years. Highly recommended.
+conrad-brunner:
+  first_name: Conrad
+  last_name: Brunner
+  since: 2017-01-11
+  profile: false
+  quotes:
+    - "I like the space a lot: roomy, on two floors with a spacey kitchen area."
+    - It never feels rammed, although it has a decent capacity.
+    - The folk are friendly techies & creatives, and you can find out what they do at the weekly Show & Tell, which are fund and educational.
+    - Thoroughly recommended. (Oh, and it has superfast broadband).
+margaret-ousby:
+  first_name: Margaret
+  last_name: Ousby
+  since: 2017-01-30
+  profile: false
+  quotes:
+    - Deciding to rent co-working desk space at The Skiff has been an excellent investment.
+    - Within my first month I won freelance contracts through introductions from other 'Skiff Mates' that more than covered the cost of my first year's membership.
+    - The space is dedicated to freelancers, not small businesses, so we don't get crowded out or treated like 2nd-class members as can happen in other Brighton co-working spaces.
+    - The social side is great too, I've made many new friends since working here.
+joanne-lloyd:
+  first_name: Joanne
+  last_name: Lloyd
+  since: 2016-07-22
+  profile: false
+  quotes:
+    - Really love the space and the people in it. It's so relaxed and friendly. There's also great social as well. I've been here for over a year and loving it!
+caroline-beavon:
+  first_name: Caroline
+  last_name: Beavon
+  since: 2016-06-24
+  profile: true
+  quotes:
+    - What a great place! Very friendly and welcoming people, plenty of events happening for members and a choice of spaces to suit your working style.
+    - I joined the Skiff as soon as I moved to Brighton from Birmingham.
+paul-silver:
+  first_name: Paul
+  last_name: Silver
+  since: 2009-08-11
+  profile: false
+  quotes:
+    - An excellent coworking space I've used regularly for seven years.
+    - It's got everything you need - lovely community of people, blazing internet connection, and different areas to work from from busy and buzzy to very quiet.
+    - Highly recommended.
+steve-green:
+  first_name: Steve
+  last_name: Green
+  since: 2015-11-17
+  profile: false
+  quotes:
+    - The Skiff really understands what people what from a shared / collaborative  workspace and provide it at a great price. 
+    - The environment is focused but fun, with lots of like-minded people about the place. 
+    - I'm extremely happy here :)
+simon-peters:
+  first_name: Simon
+  last_name: Peters
+  since: 2012-12-04
+  profile: false
+  quotes:
+    - love this place, been using it for last 3 years, best co-working space in Brighton
+dan-young:
+  first_name: Dan
+  last_name: Young
+  since: 2015-01-22
+  profile: true
+  quotes:
+    - Office parties, the jokes over the coffee machine, and just being around productive people. That’s what first attracted me to the Skiff.
+# tom-staniford:
+#   first_name: Tom
+#   last_name: Staniford
+#   since: 
+#   profile: false
+#   quotes:
+#     - I discovered the Skiff from a freelancers networking event and am over the moon I did as I didn't even know these co-working spaces existed! Considering the facilities on offer, and the time and energy The Skiff put into bringing everyone together, it's excellent value for money.

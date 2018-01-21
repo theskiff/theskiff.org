@@ -15,7 +15,9 @@
       <img class="float-left mr-3 img-fluid w-50 d-none d-xs-block d-sm-block" src="<%= current_page.data.member.image %>" alt="<%= current_page.data.member.first_name %> <%= current_page.data.member.last_name %>">
       <%= yield_content :q_and_a %>
       <a href="<%= current_page.data.member.website %>" class="btn btn-primary btn-block">Visit <%= current_page.data.member.first_name %>'s website</a>
+      <% if current_page.data.member.twitter.present? %>
       <a href="https://twitter.com/<%= current_page.data.member.twitter %>" class="btn btn-primary btn-block">Follow @<%= current_page.data.member.twitter %> on Twitter</a>
+      <% end %>
       <a href="/join" class="btn btn-success btn-block text-white">Cowork with <%= current_page.data.member.first_name %> at The Skiff</a>
     </div>
   </div>

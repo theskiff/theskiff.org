@@ -33,8 +33,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='/javascripts/countdown.min.js'></script>
   </head>
   <body>
+    <div id="promo-countdown" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="display: none;"></div>
     <nav class="navbar navbar-expand navbar-light bg-light">
       <div class="container-fluid">
         <ul class="navbar-nav">
@@ -57,12 +59,6 @@
           </li>
         </ul>
         <ul class="navbar-nav">
-<!--           <li class="nav-item d-none d-md-block">
-            <a class="nav-link" href="http://blog.theskiff.org">Blog</a>
-          </li>
-          <li class="nav-item d-none d-md-block">
-            <a class="nav-link" href="/faq">FAQ</a>
-          </li> -->
           <li class="nav-item">
             <a class="btn btn-outline-success my-2 my-sm-0 mr-2" href="/join">Join</a>
           </li>
@@ -76,6 +72,7 @@
 
     </nav>
     <%= yield %>
+    <div id="promo-countdown2" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="display: none;"></div>
   <footer class="py-5">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-5">
@@ -188,5 +185,23 @@
     <% if content_for?(:javascript) %>
       <%= yield_content :javascript %>
     <% end %>
+    <script>
+      var timerId =
+          countdown(
+            new Date(2018, 1, 0),
+            function(ts) {
+              var now_date = new Date();
+              var end_date = new Date(2018, 1, 0);
+              var countdown_element = document.getElementById('promo-countdown')
+              var countdown_element2 = document.getElementById('promo-countdown2')
+              if (now_date.getTime() < end_date.getTime()) {
+                countdown_content = ts.toHTML("strong") + " until our 2018 New Year Membership Promotion ends: <a class='btn btn-sm btn-secondary my-2 my-sm-0 mr-2' href='/join'>Join now</a>" ;
+                countdown_element.innerHTML = countdown_content;
+                countdown_element2.innerHTML = countdown_content;                
+                countdown_element.style.display = "block";
+                countdown_element2.style.display = "block";
+              }
+            });
+    </script>
   </body>
 </html>

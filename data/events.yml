@@ -5,7 +5,7 @@ games_night:
   description: An evening of competative and cooperative board game playing amongst Skiff Mates.
   cta: If you have any cool games (that aren't already in the Board Game Collection in the Mess) bring them along!
 pastries:
-  name: Skiff Pastries
+  name: Fika (a Sweedish take on Skiff Pastries)
   time: from 10:30am
   location: in The Mess
   description: Pastries, coffee, tea and good company.
@@ -180,3 +180,16 @@ ruby:
   location: in The Engine Room
   description: A group for Rubyists on the South Coast, centred on Brighton. A broad church, we're nice first, 'right' second.
   link: https://www.meetup.com/Brighton-Ruby-Group/
+sharepoint:
+  name: Brighton SharePoint, Office 365 and Azure Meetup
+  time: at 7:00pm
+  location: in The Engine Room
+  description: Are you keen to learn more about SharePoint? Not sure you're getting the best out of SharePoint? Would you like to get inspired by seeing what other SharePoint users are doing with the platform?
+  cta: Come and join us! We'll be holding regular meet ups in Brighton, including surgeries and seminars.
+  link: https://www.meetup.com/Brighton-SharePoint-Meetup/
+businessamp:
+  name: BusinessAmp
+  time: at 18:00
+  location: in The Bridge
+  description: Business Amp is here to help you organise, monetise and develop your businesses.
+  link: https://businessamp.co.uk/

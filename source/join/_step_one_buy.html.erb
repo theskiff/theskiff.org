@@ -1,0 +1,108 @@
+<div class="wrapper">
+  <div class="content">
+    <div class="d-flex flex-column flex-lg-row
+    justify-content-around justify-content-lg-around
+    align-items-stretch align-items-lg-center content-cards no-gutters">
+    <div class="card bg-light col-xs-12 col-lg-5 col-xl-4">
+
+      <form action="https://www.getdrip.com/forms/692847624/submissions"  
+            method="post"
+            data-drip-embedded-form="692847624">
+        <div class="card-body">
+          <input type="hidden" id="drip-plan-id" name="fields[plan_id]" value="<%= current_page.data.plan_id %>" />
+          <input type="hidden" id="drip-plan-name" name="fields[plan_name]" value="<%= current_page.data.plan_name %>" />
+          <input type="hidden" id="drip-plan-amount" name="fields[plan_amount]" value="<%= current_page.data.plan_amount %>" />
+
+          <%= image_tag "theskiff.svg", :width=>60, :class=>"d-none d-md-block d-lg-block mx-auto mb-3" %>
+          <h4 class="card-title text-center"><%= current_page.data.title %></h4>
+          <p class="card-text d-none d-md-block d-lg-block">First things first. Who is this for?</p>
+          <div class="form-row mb-0">
+            <div class="col">
+              <div class="form-group mb-0">
+                <label class="sr-only" for="drip-first-name">First Name</label>
+                <input type="text" id="drip-first-name" name="fields[first_name]" placeholder="First Name" class="form-control" autofocus/>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group mb-0">
+                <label class="sr-only" for="drip-last-name">Last Name</label>
+                <input type="text" id="drip-last-name" name="fields[last_name]" placeholder="Last Name" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <small id="nameHelp" class="form-text text-muted d-none d-md-block d-lg-block">Skiff memberships are always in the name of one individual.</small>
+
+          <div class="form-group mt-3">
+            <label class="sr-only" for="drip-email">Email Address</label>
+            <input type="email" id="drip-email" name="fields[email]" placeholder="Email" class="form-control"/>
+            <small id="emailHelp" class="form-text text-muted d-none d-md-block d-lg-block">This is where we’ll send the information you need to use your <%= current_page.data.plan_name %>. It <strong>must</strong> be the email address of the person named above.</small>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="drip-company">Company Name</label>
+            <input data-quaderno="company-name" class="form-control" type="text" id="drip-company" name="fields[company]" placeholder="Company Name"/>                
+            <small id="companyHelp" class="form-text text-muted d-none d-md-block d-lg-block">This will be shown on invoices.</small>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="drip-billing-email">Billing Email</label>
+            <input data-quaderno="billing_email" class="form-control" type="email" id="drip-billing-email" name="fields[billing_email]" placeholder="Billing Email"/>
+            <small id="billingHelp" class="form-text text-muted d-none d-md-block d-lg-block">We'll send a receipt and invoice to this address.</small>
+          </div>
+          <div class="actions">
+            <input type="submit" name="submit" value="Proceed to membership summary" data-drip-attribute="sign-up-button" class="btn btn-secondary btn-block"/>
+          </div>
+        </div>
+      </form>
+
+      </div>
+
+      <div class="card col-xs-12 col-lg-5 col-xl-4">
+      <div class='card-header text-center'>
+        <h6 class=''><%= current_page.data.plan_name %></h6>
+        <h2>
+          &pound;<%= current_page.data.plan_price %>
+        </h2>
+        <p>plus VAT</p>
+      </div>
+      <ul class='list-group list-group-flush'>
+        <% current_page.data.plan_features.each do |feature| %>
+          <li class='list-group-item'>
+            <%= feature %>
+          </li>
+        <% end %>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <section class="full-height">
+    <div class="left-half">
+
+    </div>
+    <div class="right-half">
+      <img src="/images/skiff-mates.jpg">
+    </div>
+  </section>
+</div>
+
+<% content_for :javascript do %>
+  <script>
+    $(document).ready(function(){
+        var emailElement = document.getElementById('drip-email');
+        var firstNameElement = document.getElementById('drip-first-name');
+        var lastNameElement = document.getElementById('drip-last-name');
+        var companyElement = document.getElementById('drip-company');
+        var billingEmailElement = document.getElementById('drip-billing-email');
+
+        _dcq.push(['identify', { success: function(payload){
+            if (payload.anonymous){
+            }
+            else{
+              emailElement.setAttribute('value', payload.email);
+              firstNameElement.setAttribute('value', payload.custom_fields.first_name);
+              lastNameElement.setAttribute('value', payload.custom_fields.last_name);
+              companyElement.setAttribute('value', payload.custom_fields.company);
+              billingEmailElement.setAttribute('value', payload.custom_fields.billing_email);
+            }
+        }}])
+    });
+  </script>
+<% end %>

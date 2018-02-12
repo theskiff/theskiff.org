@@ -113,12 +113,30 @@ carl-jeffrey:
   profile: false
   captaincies:
     - 2018-02-05
+steve-green:
+  first_name: Steve
+  last_name: Green
+  profile: false
+  captaincies:
+    - 2018-02-12
+mark-cooper:
+  first_name: Mark
+  last_name: Cooper
+  profile: false
+  captaincies:
+    - 2018-02-19
+elliot-taylor:
+  first_name: Elliot
+  last_name: Taylor
+  profile: false
+  captaincies:
+    - 2018-02-26
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-01-08
-you:
+    - 2018-03-05
+conrad-brunner:
   first_name: Conrad
   last_name: Brunner
   profile: false

@@ -42,7 +42,7 @@ dataviz_brighton:
   description: A group for anyone interested in data visualisation (users, designers, coders, artists, illustrators, scientists) to meet, chat and collaborate on anything data visualisation related.
   cta: It's a multi-disciplinary practice so a great chance to collaborate and meet new people from different fields. The meetups will initially be informal but they may evolve into workshops and talks depending on demand.
   link: http://www.datavisbrighton.com/
-imporvements_lunch:
+improvements_lunch:
   name: Skiff Improvements Lunch
   time: at 12:30
   location: in The Mess
@@ -172,7 +172,7 @@ skiffmas:
 xmasquiz:
   name: Christmas Quiz and Festive Nibbles
   time: from 12:30
-  location: The Mess
+  location: in The Mess
   description: Captain Alice Clarke is organising some daytime festivites over lunch.
 ruby:
   name: Brighton Ruby Meetup
@@ -200,3 +200,15 @@ globaldiversitycfpday:
   description: Have you always wanted to become a tech conference speaker? 
   cta: Let 2018 be the year that you make that dream a reality!
   link: https://www.globaldiversitycfpday.com/events/60
+pizza:
+  name: Pizza Time
+  time: at 2pm
+  location: in The Mess
+  description: On Wednesday lunchtime this week's Captain is going to get in a big order of pizza. We'll all enjoy it together around the table in the Mess.
+  cta: Go on, grab a slice!
+creamtea:
+  name: Cream Tea
+  time: at 3pm
+  location: in The Mess
+  description: On Wednesday afternoon this week's Captain is going to put on a proper Cornish Cream Tea. We'll all enjoy it together around the table in the Mess.
+  cta: Go on, grab a scone

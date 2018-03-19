@@ -6,7 +6,7 @@ games_night:
   cta: If you have any cool games (that aren't already in the Board Game Collection in the Mess) bring them along!
   link: https://theskiff.groupbuzz.io/topics/16388-skiff-games-night-next-friday-23rd-feb-2018
 pastries:
-  name: Fika (a Sweedish take on Skiff Pastries)
+  name: Skiff Pastries
   time: from 10:30am
   location: in The Mess
   description: Pastries, coffee, tea and good company.
@@ -278,3 +278,9 @@ uxcamp:
   location: The Skiff (whole building)
   description: An ‘unconference’ for anyone involved or interested in user experience design, product design, user research, interaction design, information architecture, usability, accessibility and other associated fields.
   link: https://www.uxcampbrighton.org/
+wordpressintro:
+  name: Introduction to WordPress with James Endersby
+  time: from 6pm
+  location: in The Bridge
+  description: "Learn how to use Wordpress to create and manage your website. Cost: £57.50+VAT"
+  link: https://yurtacademy.com/event/introduction-to-wordpress/

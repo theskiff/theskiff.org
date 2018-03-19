@@ -4,12 +4,6 @@ ben-edwards:
   profile: false
   captaincies:
     - 2017-09-18
-richard-dallaway:
-  first_name: Richard
-  last_name: Dallaway
-  profile: false
-  captaincies:
-    - 2017-09-25
 hazlitt-eastman:
   first_name: Hazlitt
   last_name: Eastman
@@ -138,11 +132,18 @@ lizzie-davey:
   profile: true
   captaincies:
     - 2018-03-12
+richard-dallaway:
+  first_name: Richard
+  last_name: Dallaway
+  profile: false
+  captaincies:
+    - 2018-03-19
+    - 2017-09-25
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-03-19
+    - 2018-03-26
 conrad-brunner:
   first_name: Conrad
   last_name: Brunner

@@ -10,12 +10,6 @@ richard-dallaway:
   profile: false
   captaincies:
     - 2017-09-25
-dave-gurnell:
-  first_name: Dave
-  last_name: Gurnell
-  profile: false
-  captaincies:
-    - 2017-10-02
 hazlitt-eastman:
   first_name: Hazlitt
   last_name: Eastman
@@ -131,11 +125,24 @@ elliot-taylor:
   profile: false
   captaincies:
     - 2018-02-26
+dave-gurnell:
+  first_name: Dave
+  last_name: Gurnell
+  profile: false
+  captaincies:
+    - 2018-03-05
+    - 2017-10-02
+lizzie-davey:
+  first_name: Lizzie
+  last_name: Davey
+  profile: true
+  captaincies:
+    - 2018-03-12
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-03-05
+    - 2018-03-19
 conrad-brunner:
   first_name: Conrad
   last_name: Brunner

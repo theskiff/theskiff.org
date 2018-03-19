@@ -1,9 +1,10 @@
 games_night:
   name: Skiff Games Night
-  time: from 6pm
+  time: from 7pm
   location: in The Mess
   description: An evening of competative and cooperative board game playing amongst Skiff Mates.
   cta: If you have any cool games (that aren't already in the Board Game Collection in the Mess) bring them along!
+  link: https://theskiff.groupbuzz.io/topics/16388-skiff-games-night-next-friday-23rd-feb-2018
 pastries:
   name: Fika (a Sweedish take on Skiff Pastries)
   time: from 10:30am
@@ -20,7 +21,7 @@ welcome_lunch:
   name: Local Welcome Lunch
   time: from 12:30pm
   location: at Grow 40 on Kensington Gardens
-  description: Come and join 8 of your fellow Skiff Mates for lunch at a local independent restaurant. New members get their lunch free this week. £15 per head charged to your next invoice for Skiff Mates.
+  description: Come and join 8 of your fellow Skiff Mates for lunch at a local independent restaurant. £15 per head charged to your next invoice.
   cta: "Email: jon@theskiff.org for menu and details."
 show_and_tell:
   name: Lunchtime Show and Tell
@@ -35,7 +36,7 @@ the_farm:
   location: at Caxton Arms on North Gardens
   description: A great reason to come into town for the day. Lots of Skiff Mates will be heading here from The Skiff. The Brighton Farm is a networking group for web designers, developers and people with related new media skills who live in Brighton and the surrounding areas. We meet weekly in different venues around Brighton and Hove.
   link: http://www.brightonfarm.com/
-dataviz_brighton:
+dataviz:
   name: Data Visualisation Brighton Meetup
   time: at 7:30
   location: in The Engine Room
@@ -192,7 +193,7 @@ businessamp:
   time: at 18:00
   location: in The Bridge
   description: Business Amp is here to help you organise, monetise and develop your businesses.
-  link: https://businessamp.co.uk/
+  link: https://www.meetup.com/Brighton-Amp-Brighton/
 globaldiversitycfpday:
   name: global diversity CFP day
   time: at 11am
@@ -212,3 +213,68 @@ creamtea:
   location: in The Mess
   description: On Wednesday afternoon this week's Captain is going to put on a proper Cornish Cream Tea. We'll all enjoy it together around the table in the Mess.
   cta: Go on, grab a scone
+cakes:
+  name: Cake Time
+  time: at 3pm
+  location: in The Mess
+  description: On Thursday afternoon this week's Captain is going to get some cakes. We'll all enjoy them together around the table in the Mess.
+  cta: Go on, grab a slice!
+gdpr:
+  name: GDPR Session
+  time: at 1:00pm
+  location: in The Bridge
+  description: On Friday Skiff Mate Vanessa Wright's friend, a Tech lawyer, has offered to come in and give us a little talk on GDPR and what it all means.
+  link: https://theskiff.groupbuzz.io/topics/16234-gdpr-talk-at-the-skiff
+wordup:
+  name: WordUp Brighton
+  time: at 6:30pm
+  location: at Platform9, Tower Point
+  description: A regular meet up for anyone interested in WordPress that can make it to Brighton on the night!
+  cta: Whether you're a designer, developer, blogger, content manager or anyone else who deals with WordPress, come along and meet some like minded souls.
+  link: https://www.meetup.com/WordUp-Brighton/
+wednesdaywalk:
+  name: Wednesday Walk
+  time: at 1:00pm
+  location: meet at The Skiff's Front Door
+  description: We’ll have a wander around town and get a hot chocolate.
+  cta: Wear warm clothes!
+massage:
+  name: Revitalisation Massages
+  time: from 2pm
+  location: in The Bridge
+  description: 15 minutes revitaliser a quick booster treatment to leave you feeling energised £10. Other options available.
+  cta: Email hayley@officevitality.co.uk for more information
+  link: https://theskiff.groupbuzz.io/topics/16395-massages-friday-2nd-march-from-2pm
+farm_birthday:
+  name: Freelancers Farm 15th Birthday Party
+  time: from 6:00pm
+  location: at The Skiff
+  description: The Farm Freelancers group will be having its 15th birthday celebration at The Skiff. All Skiffmates are welcome to attend!
+  cta: If you'd like to come along and meet lots of lovely local techies, writers, marketers, and more, please do!
+photos:
+  name: Business portrait pop-up studio
+  time: 20 minute slots all day
+  location: in The Bridge
+  description: "We've booked Katariina Järvinen from Light Trick Photography to take photos Skiff Mates. There are a few 20 minute slots free this afternoon."
+  cta: Please pick your time slot for a portrait photo (£10+VAT)
+  link: https://doodle.com/poll/exr7fyk6ikktah9v
+cro:
+  name: Brighton CRO
+  time: from 6:30pm
+  location: in The Engine Room
+  description: "Now into it's fifth year, BrightonCRO retains it's simple agenda: help people break into the conversion rate optimisation (CRO) industry, learn more about it, and excel in it."
+  cta: Come along to hear talks from some of the finest CRO, UX & Personalisation industry experts, network with the rapidly growing CRO community.
+  link: http://www.brightoncro.com/
+mindthecode:
+  name: "Codebar: Mind The Codebar"
+  time: from 10am
+  loaction: in The Engine Room
+  description: Mind the Code is a day-long coding and yoga workshop. Sponsored by and running as part of, We Spring Forward festival, a month long celebration of the role of women in digital culture, coinciding with women's history month in March.
+  cta: All levels of Javascript and Ruby are welcome, including none, and we would recommend taking this opportunity to learn. 
+  link: https://codebar.io/events/mindTheCodeBTN
+uxcamp:
+  name: UX Camp Brighton
+  time: from 10am
+  location: The Skiff (whole building)
+  description: An ‘unconference’ for anyone involved or interested in user experience design, product design, user research, interaction design, information architecture, usability, accessibility and other associated fields.
+  link: https://www.uxcampbrighton.org/

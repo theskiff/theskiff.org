@@ -1,33 +1,9 @@
-ben-edwards:
-  first_name: Ben
-  last_name: Edwards
-  profile: false
-  captaincies:
-    - 2017-09-18
-hazlitt-eastman:
-  first_name: Hazlitt
-  last_name: Eastman
-  profile: false
-  captaincies:
-    - 2017-10-09
 tom-parslow:
   first_name: Tom
   last_name: Parslow
   profile: false
   captaincies:
     - 2017-10-16
-margaret-ousby:
-  first_name: Margaret
-  last_name: Ousby
-  profile: false
-  captaincies:
-    - 2017-10-23
-dan-young:
-  first_name: Dan
-  last_name: Young
-  profile: true
-  captaincies:
-    - 2017-10-30
 declan-coleman:
   first_name: Declan
   last_name: Coleman
@@ -65,18 +41,6 @@ alice-clarke:
   captaincies:
     - 2017-12-18
     - 2017-09-11
-james-endersby:
-  first_name: James
-  last_name: Endersby
-  profile: false
-  captaincies:
-    - 2018-01-01
-megan-sayers:
-  first_name: Megan
-  last_name: Sayers
-  profile: false
-  captaincies:
-    - 2018-01-08
 matt-oakes:
   first_name: Matt
   last_name: Oakes
@@ -107,12 +71,6 @@ steve-green:
   profile: false
   captaincies:
     - 2018-02-12
-mark-cooper:
-  first_name: Mark
-  last_name: Cooper
-  profile: false
-  captaincies:
-    - 2018-02-19
 elliot-taylor:
   first_name: Elliot
   last_name: Taylor
@@ -139,14 +97,69 @@ richard-dallaway:
   captaincies:
     - 2018-03-19
     - 2017-09-25
-you:
-  first_name: You
+hazlitt-eastman:
+  first_name: Hazlitt
+  last_name: Eastman
   profile: false
   captaincies:
     - 2018-03-26
+    - 2017-10-09
 conrad-brunner:
   first_name: Conrad
   last_name: Brunner
   profile: false
   captaincies:
     - 2018-04-09
+margaret-ousby:
+  first_name: Margaret
+  last_name: Ousby
+  profile: false
+  captaincies:
+    - 2017-10-23
+    - 2018-04-23
+vanessa-wright:
+  first_name: Vanessa
+  last_name: Wright
+  profile: false
+  captaincies:
+    - 2018-04-23
+megan-sayers:
+  first_name: Megan
+  last_name: Sayers
+  profile: false
+  captaincies:
+    - 2018-04-30
+    - 2018-01-08
+ben-edwards:
+  first_name: Ben
+  last_name: Edwards
+  profile: false
+  captaincies:
+    - 2018-05-07
+    - 2017-09-18
+you:
+  first_name: You
+  profile: false
+  captaincies:
+    - 2018-05-14
+james-endersby:
+  first_name: James
+  last_name: Endersby
+  profile: false
+  captaincies:
+    - 2018-05-21
+    - 2018-01-01
+mark-cooper:
+  first_name: Mark
+  last_name: Cooper
+  profile: false
+  captaincies:
+    - 2018-05-28
+    - 2018-02-19
+dan-young:
+  first_name: Dan
+  last_name: Young
+  profile: true
+  captaincies:
+    - 2018-06-11
+    - 2017-10-30

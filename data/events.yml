@@ -4,7 +4,7 @@ games_night:
   location: in The Mess
   description: An evening of competative and cooperative board game playing amongst Skiff Mates.
   cta: If you have any cool games (that aren't already in the Board Game Collection in the Mess) bring them along!
-  link: https://theskiff.groupbuzz.io/topics/16388-skiff-games-night-next-friday-23rd-feb-2018
+  link: https://theskiff.groupbuzz.io/topics/16734-skiff-games-night-april-20th-only-board-games-allowed-no-other-games
 pastries:
   name: Skiff Pastries
   time: from 10:30am
@@ -215,9 +215,9 @@ creamtea:
   cta: Go on, grab a scone
 cakes:
   name: Cake Time
-  time: at 3pm
+  time: at 10:30am
   location: in The Mess
-  description: On Thursday afternoon this week's Captain is going to get some cakes. We'll all enjoy them together around the table in the Mess.
+  description: On Wednesday morning this week's Captain is going to get some cakes. We'll all enjoy them together around the table in the Mess.
   cta: Go on, grab a slice!
 gdpr:
   name: GDPR Session
@@ -284,3 +284,21 @@ wordpressintro:
   location: in The Bridge
   description: "Learn how to use Wordpress to create and manage your website. Cost: £57.50+VAT"
   link: https://yurtacademy.com/event/introduction-to-wordpress/
+tapas_tuesday:
+  name: Tapas Tuesday
+  time: at 12:30pm
+  location: in The Mess
+  description: On Tuesday lunchtime Captain Vanessa arranged for Ole Ole to come in and feed us all tapas.
+  cta: If anyone is vegan please do let her know. Or any other allergies?
+rust:
+  name: Brighton Rust Meetup
+  time: at 12:00pm
+  location: in The Bridge
+  description: A group for Rust programmers in Brighton.
+mindfulness:
+  name: Mindfulness at The Skiff
+  time: at 5:00pm
+  location: in The Bridge
+  description: This is an introduction before the Mindfulness for stress course which starts towards the end of May.
+  cta: First session is half price so only £5!
+  link: https://theskiff.groupbuzz.io/topics/16751-mindfulness-taster-drop-in-session

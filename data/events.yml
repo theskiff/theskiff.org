@@ -308,3 +308,15 @@ lunchin:
   location: in The Mess
   description: This week's captain will be organising lunch. Food will be provided for at least the first 20 Skiff Mates to join.
   cta: Come and break bread with your coworkers.
+memberdrive:
+  name: New Member Promotion
+  time: Ends
+  location: 
+  description: Anyone who's not been a Skiff Mate for the last 12 months and joins as a 3rd Mate or above before the end of May will get lunch and a professional portrait photo on us. 
+  cta: Please spread the word. Send people to https://theskiff.org.
+uxcampredux:
+  name: UX Camp Brighton Redux
+  time: from 7pm
+  location: in The Engine Room
+  description: This event will showcase some of the most popular sessions from uxcb18, selected from all those praised by attendees in our post-event survey.
+  link: https://www.uxcampbrighton.org/

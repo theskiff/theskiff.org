@@ -320,3 +320,14 @@ uxcampredux:
   location: in The Engine Room
   description: This event will showcase some of the most popular sessions from uxcb18, selected from all those praised by attendees in our post-event survey.
   link: https://www.uxcampbrighton.org/
+worldcupopening:
+  name: World Cup Opening Game
+  time: from 4pm
+  location: in The Mess
+  description: This week's captain is very excited about the football. Beers and football snacks laid on. We’ll keep the sound low so it doesn’t disturb non-fans.
+  cta: Let @dan.young know if you’re planning on watching it (and any special drink requests) so he can make sure everyone’s catered for
+worldcupfriday:
+  name: World Cup Fridy Games
+  time: at 1pm 4pm and 7pm
+  location: in The Mess
+  description: This week's captain is very excited about the football. Beers and football snacks laid on. We’ll keep the sound low so it doesn’t disturb non-fans.

@@ -152,6 +152,7 @@ carl-jeffrey:
   profile: false
   captaincies:
     - 2018-06-04
+    - 2018-02-05
 dan-young:
   first_name: Dan
   last_name: Young
@@ -159,8 +160,14 @@ dan-young:
   captaincies:
     - 2018-06-11
     - 2017-10-30
+cath-lloyd:
+  first_name: Cath
+  last_name: Lloyd
+  profile: true
+  captaincies:
+    - 2018-06-18
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-06-18
+    - 2018-06-25

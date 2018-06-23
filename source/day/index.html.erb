@@ -1,0 +1,17 @@
+---
+title: Extra Day at The Skiff for a Skiff Mate
+layout: "no-nav"
+sitemap_noindex: true
+sitemap_priority: 0.8
+---
+<div class="container">
+  <div class="row d-flex flex-column flex-lg-row
+    justify-content-around justify-content-lg-around
+    align-items-stretch align-items-lg-center">
+    <div class="col-xs-12 col-md-8 my-5 mx-auto">
+      <h3>Buy an extra Day at The Skiff</h3>
+      <p>You're a member of The Skiff, probably a Community Mate. Your membership doesn't include any use of the space but you've used or are about to use it. This is where you can pay for that usage:</p>
+        <button id="QuadernoCheckoutButton-1529758563" class="custom-quaderno-button" style="background-color: #55ccaa; border-color: #55ccaa; box-shadow: #3b8f77 0px 2px 0px 0px;">Buy now</button><script>var redirectCallback1529758563 = function(data) {if (data.gateway != 'paypal') {window.location = "https://www.theskiff.org/thank-you/";} else {action_url = QuadernoCheckout.apiURL();paypal_data = JSON.parse(data.paypal_data);paypal_data.transaction.redirect_url = "https://www.theskiff.org/thank-you/" ;var form = document.createElement("form");form.setAttribute("method", "POST");form.setAttribute("action", action_url);form.setAttribute("enctype", "application/json");var hiddenField = document.createElement("input");hiddenField.setAttribute("type", "hidden");hiddenField.setAttribute("name", "paypal_data");hiddenField.setAttribute("value", JSON.stringify(paypal_data));form.appendChild(hiddenField);document.body.appendChild(form);form.submit();}};function configureCheckout() {var handler=QuadernoCheckout.configure({key:"pk_live_vzQcNcdarGQFQH7vxqfL",color:"#55ccaa",callback: redirectCallback1529758563});document.querySelector("#QuadernoCheckoutButton-1529758563").addEventListener("click",function(e){handler.open({callback: redirectCallback1529758563,description:"Extra Day at The Skiff for a Skiff Mate",gateway:"stripe",type:"charge",taxes:"excluded",country:"GB",item_code:"skiffmateextraday",transaction_type:"eservice",currency:"GBP",billing_address: false,coupon: false, amount:"1250"});e.preventDefault();});}function loadCheckoutScript() {var script = document.createElement('script');script.async = true;script.src = 'https://checkout.quaderno.io/checkout.js';(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);script.onload = configureCheckout;}if(typeof(QuadernoCheckout) != 'undefined') {configureCheckout();}else {loadCheckoutScript();if (document.querySelectorAll('.quaderno-button-style').length === 0) {head = document.head;link = document.createElement('link');link.type = 'text/css';link.rel = 'stylesheet';link.href = 'https://checkout.quaderno.io/quaderno-button.css';link.className = 'quaderno-button-style';head.appendChild(link);}};</script>
+    </div>
+  </div>
+</div>

@@ -125,13 +125,6 @@ ben-edwards:
   captaincies:
     - 2018-05-07
     - 2017-09-18
-elliot-taylor:
-  first_name: Elliot
-  last_name: Taylor
-  profile: false
-  captaincies:
-    - 2018-05-14
-    - 2018-02-26
 james-endersby:
   first_name: James
   last_name: Endersby
@@ -166,8 +159,16 @@ cath-lloyd:
   profile: true
   captaincies:
     - 2018-06-18
+elliot-taylor:
+  first_name: Elliot
+  last_name: Taylor
+  profile: false
+  captaincies:
+    - 2018-07-02
+    - 2018-05-14
+    - 2018-02-26
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-06-25
+    - 2018-07-09

@@ -238,13 +238,13 @@ wednesdaywalk:
   location: meet at The Skiff's Front Door
   description: We’ll have a wander around town and get a hot chocolate.
   cta: Wear warm clothes!
-massage:
+massages:
   name: Revitalisation Massages
-  time: from 1pm
-  location: in The Bridge
+  time: from 2pm
+  location: in The Cabin
   description: 30 minute premier revitalisation massages working on the back, neck, shoulders and head to leave you feeling refreshed and ready for the weekend! Other options available.
   cta: Email hayley@officevitality.co.uk for more information
-  link: https://theskiff.groupbuzz.io/members/3326-hayley-harrison
+  link: https://theskiff.groupbuzz.io/topics/17385-massages-17th-july
 farm_birthday:
   name: Freelancers Farm 15th Birthday Party
   time: from 6:00pm
@@ -297,11 +297,11 @@ rust:
   description: A group for Rust programmers in Brighton.
 mindfulness:
   name: Mindfulness at The Skiff
-  time: at 5:00pm
-  location: in The Bridge
-  description: This is an introduction before the Mindfulness for stress course which starts towards the end of May.
-  cta: Price £9.
-  link: https://mindfulnessattheskiff23may.youcanbook.me/
+  time: at 1:00pm
+  location: in The Cabin
+  description: I am running a Mindfulness drop in, taster session for anyone that would like to join.
+  cta: Price £5. Email hayley@officevitality.co.uk for more information
+  link: https://theskiff.groupbuzz.io/topics/17354-mindfulness-drop-in-17th-july
 lunchin:
   name: Skiff Mates Lunch
   time: at 1:00pm
@@ -336,3 +336,17 @@ improvementsday:
   time: from 9:00 until 18:00
   location: at The Skiff
   description: It's time intensively put some ideas into action and make The Skiff's space better than ever. Join us for all or a part of the day to make your mark on your workspace.
+java:
+  name: Brighton Java
+  time: at 7:00pm
+  location: in The Engine Room
+  description: Brighton Java is a group bringing together Java users, enthusiasts and learners.
+  cta: We’re interested in the whole world of Java – android development, server frameworks, Groovy, interesting tools, applications, Clojure, development methodologies and so on and so on – anything Java.
+  link: https://www.meetup.com/Brighton-Java/
+brightonemerge:
+  name: Brighton Emerge
+  time: 8:00pm
+  location: in the Engine Room
+  description: BrightonEmerge is a space for businesses, startups and freelancers to meet on a personal level, to allow the best collaborations and new projects to emerge.
+  cta: Get your free ticket to a concoction of small talks, discussions, entertainment and interactive sessions.
+  link: https://www.eventbrite.co.uk/e/brighton-emerge-tickets-47535135871

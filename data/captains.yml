@@ -22,12 +22,6 @@ stuart-wallace:
   profile: false
   captaincies:
     - 2017-11-20
-sim-brody:
-  first_name: Sim
-  last_name: Brody
-  profile: false
-  captaincies:
-    - 2017-11-27
 chris-hollands:
   first_name: Chris
   last_name: Hollands
@@ -167,8 +161,27 @@ elliot-taylor:
     - 2018-07-02
     - 2018-05-14
     - 2018-02-26
+thomas-buck:
+  first_name: Thomas
+  last_name: Buck
+  profile: true
+  captaincies:
+    - 2018-07-09
+james-nocentini:
+  first_name: James
+  last_name: Nocentini
+  profile: false
+  captaincies:
+    - 2018-07-16
+sim-brody:
+  first_name: Sim
+  last_name: Brody
+  profile: false
+  captaincies:
+    - 2018-07-23
+    - 2017-11-27
 you:
   first_name: You
   profile: false
   captaincies:
-    - 2018-07-09
+    - 2018-07-23

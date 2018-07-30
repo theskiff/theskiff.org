@@ -79,13 +79,6 @@ richard-dallaway:
   captaincies:
     - 2018-03-19
     - 2017-09-25
-hazlitt-eastman:
-  first_name: Hazlitt
-  last_name: Eastman
-  profile: false
-  captaincies:
-    - 2018-03-26
-    - 2017-10-09
 conrad-brunner:
   first_name: Conrad
   last_name: Brunner
@@ -140,13 +133,6 @@ carl-jeffrey:
   captaincies:
     - 2018-06-04
     - 2018-02-05
-dan-young:
-  first_name: Dan
-  last_name: Young
-  profile: true
-  captaincies:
-    - 2018-06-11
-    - 2017-10-30
 cath-lloyd:
   first_name: Cath
   last_name: Lloyd
@@ -180,8 +166,36 @@ sim-brody:
   captaincies:
     - 2018-07-23
     - 2017-11-27
+hazlitt-eastman:
+  first_name: Hazlitt
+  last_name: Eastman
+  profile: false
+  captaincies:
+    - 2018-07-30
+    - 2018-03-26
+    - 2017-10-09
+oliver-winks:
+  first_name: Oliver
+  last_name: Winks
+  profile: false
+  captaincies:
+    - 2018-08-06
 you:
   first_name: You
   profile: false
   captaincies:
     - 2018-07-23
+dan-young:
+  first_name: Dan
+  last_name: Young
+  profile: true
+  captaincies:
+    - 2018-09-03
+    - 2018-06-11
+    - 2017-10-30
+paul-silver:
+  first_name: Paul
+  last_name: Silver
+  profile: false
+  captaincies:
+    - 2018-09-10

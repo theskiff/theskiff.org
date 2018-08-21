@@ -243,8 +243,8 @@ massages:
   time: from 2pm
   location: in The Cabin
   description: 30 minute premier revitalisation massages working on the back, neck, shoulders and head to leave you feeling refreshed and ready for the weekend! Other options available.
-  cta: Email hayley@officevitality.co.uk for more information
-  link: https://theskiff.groupbuzz.io/topics/17482-massages-tuesday-31st-july
+  cta: Email hayley@officevitality.co.uk for more information or book here.
+  link: https://august14skiffmassage.youcanbook.me/
 farm_birthday:
   name: Freelancers Farm 15th Birthday Party
   time: from 6:00pm
@@ -350,3 +350,10 @@ brightonemerge:
   description: BrightonEmerge is a space for businesses, startups and freelancers to meet on a personal level, to allow the best collaborations and new projects to emerge.
   cta: Get your free ticket to a concoction of small talks, discussions, entertainment and interactive sessions.
   link: https://www.eventbrite.co.uk/e/brighton-emerge-tickets-47535135871
+wordcampcontributionday:
+  name: WordPress Contribution Day
+  time: from 10am
+  location: in the Engine Room
+  description: Contribution Day is for everyone, of every experience level and any specialism. It’s an opportunity to work on various aspects of WordPress, giving back to the open source project and the community.
+  cta: You’ll need to get a separate (free!) ticket for Contribution Day.
+  link: https://2018.brighton.wordcamp.org/tickets/

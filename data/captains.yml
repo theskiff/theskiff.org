@@ -53,12 +53,6 @@ chris-alden:
   profile: false
   captaincies:
     - 2018-01-29
-steve-green:
-  first_name: Steve
-  last_name: Green
-  profile: false
-  captaincies:
-    - 2018-02-12
 dave-gurnell:
   first_name: Dave
   last_name: Gurnell
@@ -192,11 +186,6 @@ sky-apperley:
   profile: false
   captaincies:
     - 2018-08-20
-you:
-  first_name: You
-  profile: false
-  captaincies:
-    - 2018-08-27
 dan-young:
   first_name: Dan
   last_name: Young
@@ -211,3 +200,15 @@ paul-silver:
   profile: false
   captaincies:
     - 2018-09-10
+steve-green:
+  first_name: Steve
+  last_name: Green
+  profile: false
+  captaincies:
+    - 2018-09-17
+    - 2018-02-12
+you:
+  first_name: You
+  profile: false
+  captaincies:
+    - 2018-09-24

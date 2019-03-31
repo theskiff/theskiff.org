@@ -3,11 +3,21 @@ anna-markwell:
   last_name: Markwell
   profile: false
   role: Co-Founder of The Skiff
+ben-edwards:
+  first_name: Ben
+  last_name: Edwards
+  profile: false
+  role: Skiff Mate Representative
 carl-jeffrey:
   first_name: Carl
   last_name: Jeffrey
   profile: false
   role: Co-Founder of The Skiff
+caroline-beavon:
+  first_name: Carolin
+  last_name: Beavon
+  profile: true
+  role: Skiff Mate Representative
 jonathan-markwell:
   first_name: Jonathan
   last_name: Markwell
@@ -28,13 +38,3 @@ simon-peters:
   last_name: Peters
   profile: false
   role: Accountant
-you:
-  first_name: Skiff
-  last_name: Mate
-  profile: false
-  role: We'll soon be inviting two members to the management team
-you:
-  first_name: Skiff
-  last_name: Mate
-  profile: false
-  role: We'll soon be inviting two members to the management team

@@ -207,6 +207,14 @@ steve-green:
   captaincies:
     - 2018-09-17
     - 2018-02-12
+margaret-ousby:
+  first_name: Margaret
+  last_name: Ousby
+  profile: false
+  captaincies:
+    - 2018-10-08
+    - 2018-04-23
+    - 2017-10-23
 you:
   first_name: You
   profile: false

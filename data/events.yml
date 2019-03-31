@@ -7,7 +7,7 @@ games_night:
   link: https://theskiff.groupbuzz.io/topics/16734-skiff-games-night-april-20th-only-board-games-allowed-no-other-games
 pastries:
   name: Skiff Pastries
-  time: from 9:30am
+  time: from 10:30am
   location: in The Mess
   description: Pastries, coffee, tea and good company.
   cta: Listen out for the bells.
@@ -292,8 +292,8 @@ tapas_tuesday:
   cta: If anyone is vegan please do let her know. Or any other allergies?
 rust:
   name: Brighton Rust Meetup
-  time: at 12:00pm
-  location: in The Bridge
+  time: at 4:00pm
+  location: in The Cabin
   description: A group for Rust programmers in Brighton.
 mindfulness:
   name: Mindfulness at The Skiff
@@ -363,4 +363,18 @@ openday:
   location: at The Skiff
   description: We're inviting potential Skiff Mates to spend all or part of the day at The Skiff at no charge.
   cta: Please take a few minutes to say hello to anyone you don't recognise. Show them how welcoming The Skiff can be.
-  link: https://attending.io/events/open-day-free-coworking-at-the-skiff
+  link: https://theskiff-open-day.eventbrite.com
+bdf:
+  name: Brighton Digital Festival
+  time: from 13th September to 13th October
+  location: around Brighton
+  description: Brighton Digital Festival is a month-long exploration of digital culture
+  cta: The festival celebrates the richness of the creative and cultural industries in our city and explores the ways in which digital technology continues to shape our lives and our thinking
+  link: https://brightondigitalfestival.co.uk/
+not-for-the-faint-hearted:
+  name: Not for the Faint-Hearted
+  time: from 7pm
+  location: in the Engine Room
+  description: We show you a picture and you have a set amount of time to write something in response (a story, poem, dialogue or whatever you like!). 
+  cta: Join us and write a dozen short stories in a night. And, even better, it's free! Register for your free ticket.
+  link: https://www.eventbrite.com/e/not-for-the-faint-hearted-october-2018-tickets-50698486538

@@ -3,7 +3,13 @@ html {
   font-size: 18px;
 }
 
-$font-family-sans-serif: "American Typewriter", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700|Special+Elite');
+
+$font-family-monospace:  "American Typewriter", 'Special Elite', "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$headings-font-family:  "American Typewriter", 'Special Elite', "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-sans-serif: 'Oswald', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 $lead-font-weight: 400 !default;
 
@@ -35,6 +41,10 @@ $theme-colors: map-merge((
 ), $theme-colors);
 
 @import "bootstrap";
+
+.navbar {
+  font-family: "American Typewriter", 'Special Elite', "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
 .left-half {
   background-color: $gray-100;

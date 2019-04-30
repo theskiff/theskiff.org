@@ -13,10 +13,10 @@ carl-jeffrey:
   last_name: Jeffrey
   profile: false
   role: Co-Founder of The Skiff
-caroline-beavon:
-  first_name: Carolin
-  last_name: Beavon
-  profile: true
+megan-sayers:
+  first_name: Megan
+  last_name: Sayers
+  profile: false
   role: Skiff Mate Representative
 jonathan-markwell:
   first_name: Jonathan

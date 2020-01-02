@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "The Skiff" %></title>
     <!-- Search Engine -->
-    <meta name="description" content="<%= current_page.data.description || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="description" content="<%= current_page.data.description || "A Coworking community in Brighton for individuals - freelancers, remote workers and solo business owners." %>">
     <meta name="image" content="https://theskiff.org<%= current_page.data.image || "/images/skiff-mates.jpg" %>">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="<%= current_page.data.title || "The Skiff" %>">
-    <meta itemprop="description" content="<%= current_page.data.description || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta itemprop="description" content="<%= current_page.data.description || "A Coworking community in Brighton for individuals - freelancers, remote workers and solo business owners." %>">
     <meta itemprop="image" content="https://theskiff.org<%= current_page.data.image || "/images/skiff-mates.jpg" %>">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<%= current_page.data.title || "The Skiff" %>">
-    <meta name="twitter:description" content="<%= current_page.data.description || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="twitter:description" content="<%= current_page.data.description || "A Coworking community in Brighton for individuals - freelancers, remote workers and solo business owners." %>">
     <meta name="twitter:site" content="@theskiff">
     <meta name="twitter:creator" content="@theskiff">
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="<%= current_page.data.title || "The Skiff" %>">
-    <meta name="og:description" content="<%= current_page.data.description || "200 member Coworking community in Brighton. Shared work and social space in North Laine. Established in 2008." %>">
+    <meta name="og:description" content="<%= current_page.data.description || "A Coworking community in Brighton for individuals - freelancers, remote workers and solo business owners." %>">
     <meta name="og:image" content="https://theskiff.org<%= current_page.data.image || "/images/skiff-mates.jpg" %>">
     <meta name="og:url" content="https://theskiff.org<%= current_page.url %>">
     <meta name="og:site_name" content="The Skiff">
@@ -36,10 +36,10 @@
     <script src='/javascripts/countdown.min.js'></script>
   </head>
   <body>
-<!--     <div id="promo-countdown" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="">
-      Join The Skiff before 1st May and get up to 20% off for six months
+    <div id="promo-countdown" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="">
+      Join The Skiff before 1st February and get up to 25% off for three months
       <a class="btn btn-secondary my-2 my-sm-0" href="/join">Join Today</a>
-    </div> -->
+    </div>
     <nav class="navbar navbar-expand navbar-light bg-light text-monospace">
       <div class="container-fluid">
         <ul class="navbar-nav">
@@ -75,10 +75,10 @@
 
     </nav>
     <%= yield %>
-<!-- <div id="promo-countdown2" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="">
-      Join The Skiff before 1st May and get up to 20% off for six months
+<div id="promo-countdown2" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="">
+      Join The Skiff before 1st February and get up to 25% off for three months
       <a class="btn btn-secondary my-2 my-sm-0" href="/join">Join Today</a>
-    </div> -->
+    </div>
   <footer class="py-5">
     <div class="row no-gutters">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-5">
@@ -194,14 +194,14 @@
     <script>
       var timerId =
           countdown(
-            new Date(2019, 4, 2),
+            new Date(2020, 1, 1),
             function(ts) {
               var now_date = new Date();
-              var end_date = new Date(2019, 4, 2);
+              var end_date = new Date(2020, 1, 1);
               var countdown_element = document.getElementById('promo-countdown')
               var countdown_element2 = document.getElementById('promo-countdown2')
               if (now_date.getTime() < end_date.getTime()) {
-                countdown_content = ts.toHTML("strong") + " to get upto 20% off for 6 months: <a class='btn btn-sm btn-secondary my-2 my-sm-0 mr-2' href='/join'>Join now</a>" ;
+                countdown_content = ts.toHTML("strong") + " to get upto 25% off for 3 months: <a class='btn btn-sm btn-secondary my-2 my-sm-0 mr-2' href='/join'>Join now</a>" ;
                 countdown_element.innerHTML = countdown_content;
                 countdown_element2.innerHTML = countdown_content;                
                 countdown_element.style.display = "block";

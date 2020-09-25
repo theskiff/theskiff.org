@@ -3,11 +3,6 @@ anna-markwell:
   last_name: Markwell
   profile: false
   role: Co-Founder of The Skiff
-ben-edwards:
-  first_name: Ben
-  last_name: Edwards
-  profile: false
-  role: Skiffmate Representative
 carl-jeffrey:
   first_name: Carl
   last_name: Jeffrey
@@ -38,3 +33,13 @@ simon-peters:
   last_name: Peters
   profile: false
   role: Accountant
+steve-green:
+  first_name: Steve
+  last_name: Green
+  profile: false
+  role: Skiffmate Representative
+zoe-gray:
+  first_name: Zoe
+  last_name: Gray
+  profile: false
+  role: Director of Diversity and Inclusion

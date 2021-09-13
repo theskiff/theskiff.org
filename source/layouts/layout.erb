@@ -36,11 +36,12 @@
     <script src='/javascripts/countdown.min.js'></script>
   </head>
   <body>
+    <script async data-uid="faf04b6a94" src="https://jot.ck.page/faf04b6a94/index.js"></script>
 <!--     <div id="promo-countdown" class="alert alert-danger text-center rounded-0 mb-0" role="alert" style="">
       Join before the 1st of September 2021 and we'll waive the usual one month deposit:
       <a class="btn btn-secondary my-2 my-sm-0" href="/join">Join Now</a>
-    </div> -->
-    <nav class="navbar navbar-expand navbar-light bg-light text-monospace">
+    </div>
+ -->    <nav class="navbar navbar-expand navbar-light bg-light text-monospace">
       <div class="container-fluid">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -89,19 +90,7 @@
     <div class="row no-gutters">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 mb-5">
         <div class="card bg-transparent text-white">
-          <form action="https://www.getdrip.com/forms/56551550/submissions" method="post" data-drip-embedded-form="56551550">
-              <div class="card-body">
-                <h4 class="card-title" data-drip-attribute="headlinex">Happier Homeworking in Brighton</h4>
-                <p class="card-text" data-drip-attribute="descriptionx">Take our FREE 9 lesson course that has helped over 500 freelancers in Sussex to stay productive and keep cabin fever at bay while working from home.</p>
-                <div class="form-group">
-                    <label class="sr-only" for="drip-email">Email Address</label>
-                    <input type="email" id="drip-email" name="fields[email]" placeholder="Email" class="form-control" />
-                </div>
-                <div class="actions">
-                  <input type="submit" name="submit" value="Get the first FREE lesson" data-drip-attribute="sign-up-button" class="btn btn-secondary btn-block"/>
-                </div>
-              </div>
-          </form>
+          <script async data-uid="78451a50c3" src="https://jot.ck.page/78451a50c3/index.js"></script>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
@@ -183,20 +172,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://js.stripe.com/v3/"></script>
     <script src="https://js.quaderno.io/v2/"></script>
-    <!-- Drip -->
-    <script type="text/javascript">
-      var _dcq = _dcq || [];
-      var _dcs = _dcs || {}; 
-      _dcs.account = '2663261';
-      
-      (function() {
-        var dc = document.createElement('script');
-        dc.type = 'text/javascript'; dc.async = true; 
-        dc.src = '//tag.getdrip.com/2663261.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(dc, s);
-      })();
-    </script>
     <% if content_for?(:javascript) %>
       <%= yield_content :javascript %>
     <% end %>
